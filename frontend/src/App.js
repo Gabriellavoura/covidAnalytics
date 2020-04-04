@@ -3,6 +3,7 @@ import { Container, Col, Row} from 'reactstrap';
 
 // Import Components
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import Maps from './components/Maps/Maps';
 import CardInfo from './components/Card/CardInfo';
 import GraphicCovid from './components/GraphicCovid/GraphicCovid';
@@ -68,6 +69,7 @@ function App() {
           </Col>
         </Row>
       </Container>
+      <Footer/>
     </div>
 
   );
