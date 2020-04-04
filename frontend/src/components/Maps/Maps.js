@@ -5,11 +5,14 @@ import { Card,
          CardBody,
          CardTitle } from 'reactstrap';
 
+
 import './styles.css';
 import MarkerClusterGroup from "react-leaflet-markercluster";
+
 const center = [-32.0332, -52.0986]
 
 class Maps extends React.Component{
+
 
   render() {
     return (

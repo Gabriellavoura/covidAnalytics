@@ -7,6 +7,7 @@ import Maps from './components/Maps/Maps';
 import CardInfo from './components/Card/CardInfo';
 import GraphicCovid from './components/GraphicCovid/GraphicCovid';
 import TableCovid from './components/TableCovid/TableCovid';
+import ReadApi from './services/ReadApi';
 
 import './App.css';
 
@@ -60,6 +61,7 @@ function App() {
             <Row>
               <Col xs="12" sm="12" md="12">
                   <TableCovid/>
+                  {/* <ReadApi/> */}
               </Col>
             </Row>
 
