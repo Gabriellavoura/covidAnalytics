@@ -1,0 +1,14 @@
+.navContainer{
+  margin-bottom: 10px;
+  background-color:#f0f0f5;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.15);
+}
+
+img{
+  height: 55px;
+  margin-right: 20px;
+}
+
+.logo-title{
+  font-size: 32px !important;
+}
