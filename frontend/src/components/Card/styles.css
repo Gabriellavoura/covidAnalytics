@@ -1,3 +1,9 @@
 .infoContainer{
   margin: 0px 0px 10px 0px;
 }
+.TitleCard{
+  font-weight: bold;
+  border-left: 3px solid #eb4d4b !important;
+  border-radius: 8px ;
+  box-shadow: 2px 2px 5px rgba(109, 109, 109, 0.1);
+}

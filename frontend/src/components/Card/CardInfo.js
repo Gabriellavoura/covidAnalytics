@@ -27,15 +27,16 @@ state = {
 
     return(
       <div className="infoContainer">
-        <Card body inverse style={{backgroundColor: '#E74C3C'}}>
-          <CardBody>
-            <CardTitle>
-              Casos Confirmados
-            </CardTitle>
-            <CardText>
-              Dados aqui
-            </CardText>
-            
+        <Card className="TitleCard">
+          <CardBody >          
+            <CardTitle tag="h4"
+              className=" mb-2 mb-xl-2 text-danger">
+              285,754
+            </CardTitle>           
+            <span className="h8 mb-2 font-weight-bold mb-xl-2 " >
+               Casos Confirmados
+             </span>
+                                      
           </CardBody>
         </Card>
       </div>
