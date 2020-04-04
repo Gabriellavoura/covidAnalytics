@@ -8,14 +8,11 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   NavbarText
 } from 'reactstrap'
 
 import logoFurg from '../../assets/logo.png'
+import logoC3 from '../../assets/C3.png'
 
 import './styles.css';
 // import logo from '../../assets/logo.png';
@@ -29,7 +26,8 @@ const Header = (props) => {
         <Navbar light expand="md">
           <NavbarBrand href="/" className="logo-title">
             <img src={logoFurg} alt="Logo Furg"/>
-            IteCorona</NavbarBrand>
+            <img src={logoC3} alt="Logo C3"/>
+            Portal - iTeCorona</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
@@ -37,7 +35,7 @@ const Header = (props) => {
                 <NavLink href="/components/">Components</NavLink>
               </NavItem> */}
               <NavItem>
-                <NavLink href="">GitHub</NavLink>
+                <NavLink href="https://github.com/Gabriellavoura">GitHub</NavLink>
               </NavItem>
               {/* <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
