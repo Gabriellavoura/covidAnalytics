@@ -24,7 +24,7 @@ const Footer = (props) => {
               <NavItem>
                 <NavLink >        © 2020{" "}
                     <a
-                    className="font-weight-bold ml-1"
+                    className="font-weight-bold ml-1 text-warning"
                     href="https://www.furg.br/"          
                     >
                     iTeCorona
@@ -34,14 +34,14 @@ const Footer = (props) => {
             </Nav>
             <Nav >
                 <NavItem>
-                    <NavLink href="https://www.furg.br/">
+                    <NavLink className="text-warning font-weight-bold" href="https://www.furg.br/">
                     Sobre nós
                     </NavLink>  
                 </NavItem>
             </Nav>    
             <Nav >
                 <NavItem>        
-                    <NavLink href="https://www.furg.br/">
+                    <NavLink className="text-warning font-weight-bold" href="https://www.furg.br/">
                         Portal
                     </NavLink>
                 </NavItem>                  
@@ -50,7 +50,7 @@ const Footer = (props) => {
                 <NavItem>
                     <NavLink > Powered by: {" "}
                         <a
-                        className="font-weight-bold ml-1"
+                        className="font-weight-bold ml-1 text-warning"
                         href="http://www.c3.furg.br/"          
                         >
                         Centro de Ciências Computacionais

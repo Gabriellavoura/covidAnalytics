@@ -24,10 +24,10 @@ const Header = (props) => {
     return (
       <div className="navContainer">
         <Navbar light expand="md">
-          <NavbarBrand href="/" className="logo-title">
+          <NavbarBrand href="/" className="logo-title font-weight-bold">
             <img src={logoFurg} alt="Logo Furg"/>
             <img src={logoC3} alt="Logo C3"/>
-            Portal - iTeCorona</NavbarBrand>
+            iTeCorona - RS</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
@@ -55,7 +55,7 @@ const Header = (props) => {
                 </DropdownMenu>
               </UncontrolledDropdown> */}
             </Nav>
-            <NavbarText>Ultima Atualização: 04/03/20 - 00:00 </NavbarText>
+            <NavbarText>Ultima Atualização:04/03/20 - 00:00 </NavbarText>
           </Collapse>
         </Navbar>
       </div>
