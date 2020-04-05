@@ -1,18 +1,14 @@
 import React from 'react';
-
-import { Card,
-         CardBody,
-         CardTitle } from 'reactstrap';
-
-
 import './styles.css';
+
+
+import { Card, CardBody, CardTitle } from 'reactstrap';
 import Chart from "chart.js";
 
-
-
-
 class GraphicCovid extends React.Component{
+
   chartRef = React.createRef();
+
   componentDidMount() {
 
     const myLineChart = this.chartRef.current.getContext("2d");
@@ -33,31 +29,27 @@ class GraphicCovid extends React.Component{
       },
       options: { }
       });
-
   }
 
-
   render(){
-
     return(
+
       <div className="GraphContainer">
         <Card>
           <CardBody>
-          <CardTitle tag="h5"
-                  className=" mb-2 mb-xl-2 font-weight-bold">
-                  Casos Confirmados no RS 
-                    </CardTitle> 
-            <div >
-                <canvas
-                    id="myChart"
-                    ref={this.chartRef}
-                />
+
+            <CardTitle tag="h5" className=" mb-2 mb-xl-2 font-weight-bold">
+              Casos Confirmados no RS
+            </CardTitle> 
+
+            <div>
+                <canvas id="myChart" ref={this.chartRef}/>
             </div>
+
           </CardBody>
         </Card>
       </div>
     );
   }
 }
-
 export default GraphicCovid;

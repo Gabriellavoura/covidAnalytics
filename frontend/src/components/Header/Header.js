@@ -1,78 +1,46 @@
-import React, {useState} from 'react';
+import React from 'react';
+import './styles.css';
 
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  NavbarText
-} from 'reactstrap'
 
+import { Collapse, Navbar, Nav, } from 'reactstrap'
 import logoFurg from '../../assets/logo.png'
 import logoC3 from '../../assets/C3.png'
 
-import './styles.css';
-// import logo from '../../assets/logo.png';
-
-const Header = (props) => {
-    const [isOpen, setIsOpen] = useState(false);
-  
-    const toggle = () => setIsOpen(!isOpen);
+export default class Header extends React.Component {
+  render(){
     return (
       <div className="navContainer">
-        <Navbar light expand="md">
-        <Collapse isOpen={isOpen} navbar>
-          <Nav  className="mr-auto" navbar> 
-            <a href="https://www.furg.br/">
-              <img src={logoFurg} alt="Logo Furg"/></a>
 
-          </Nav>
-          </Collapse>
-          <NavbarBrand href="/" className=" mr-auto logo-title  font-weight-bold">
-                        
-            iTeCorona - Rio Grande do Sul</NavbarBrand>
-          {/* <NavbarToggler onClick={toggle} /> */}
-          <Collapse isOpen={isOpen} navbar>
-            <Nav className="mr-auto" navbar>
-              {/* <NavItem>
-                <NavLink href="/components/">Components</NavLink>
-              </NavItem> */}
-              {/* 
-              <NavItem>
-                <NavLink href="https://github.com/Gabriellavoura">Portal</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/Gabriellavoura">GitHub</NavLink>
-              </NavItem>
-              */}
-              {/* <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Opções
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown> */}
+        <Navbar light expand="md">
+
+          <Collapse navbar>
+
+            <Nav  className="mr-auto" navbar> 
+              <a href="https://www.furg.br/">
+              <img src={logoFurg} alt="Logo Furg"/></a>
             </Nav>
-            <NavbarText>
-              <a href="http://www.c3.furg.br/">
-                <img src={logoC3} alt="Logo C3"/></a>
-            </NavbarText>
+
           </Collapse>
+
+          <Nav href="/" className=" mr-auto logo-title  font-weight-bold">            
+            iTeCorona - Rio Grande do Sul
+          </Nav>
+
+          <Collapse navbar>
+
+            <Nav className="mr-auto" navbar>
+            </Nav>
+
+            <Nav>
+              <a href="http://www.c3.furg.br/">
+              <img src={logoC3} alt="Logo C3"/></a>
+            </Nav>
+
+          </Collapse>
+
         </Navbar>
+
       </div>
     );
+  }
 }
-export default Header;
