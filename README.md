@@ -20,9 +20,13 @@ npm start
 
 Gabriel Lavoura – [@gabriel_lavoura](https://twitter.com/gabriel_lavoura)
 
+Vanessa Telles - [@tellesvanessa07](https://twitter.com/tellesvanessa07)
+
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[https://github.com/gabriellavoura/(https://github.com/gabriellavoura/)
+[https://github.com/gabriellavoura/](https://github.com/Gabriellavoura)
+
+[https://github.com/vanessatelles/](https://github.com/vanessatelles)
 
 ## Contributing
 
