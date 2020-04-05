@@ -23,6 +23,7 @@ class Maps extends React.Component{
                   className=" mb-2 mb-xl-2 font-weight-bold">
                   Mapa Rio Grande do Sul
                     </CardTitle> 
+                    </CardBody>
                     <Map center={center} zoom={10}>
                     <TileLayer
                       attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -39,7 +40,7 @@ class Maps extends React.Component{
                       <Marker position={[-32.03214, -52.11038]} />
                     </MarkerClusterGroup>
                   </Map>
-                </CardBody>
+                
               </Card> 
           </div>
 

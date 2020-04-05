@@ -24,7 +24,7 @@ class GraphicCovidBr extends React.Component{
             labels:["Jan", "Feb", "March","Apil"],
             datasets: [
               {
-                label: "Sales",
+                label: "Casos Confirmados",
                 data: [46,98,177,220],
                 fill: false,
                 borderColor: "#eb4d4b"

@@ -1,3 +1,11 @@
-.infoContainer{
-  margin: 10px 10px 0px 10px !important;
+.TabContainer{
+  margin: 10px 0px 20px 10px !important;
+  box-shadow: 2px 2px 5px rgba(109, 109, 109, 0.1);
+  border-radius: 2px !important;
+}
+
+.TabRSContainer{
+  margin: 10px 10px 20px 0px !important;
+  box-shadow: 2px 2px 5px rgba(109, 109, 109, 0.1);
+  border-radius: 2px !important;
 }

@@ -7,7 +7,7 @@ import { Card,
 import './styles.css';
 import axios from 'axios';
 
-class TableCovid extends React.Component{
+class TableCovidRS extends React.Component{
   
   state = {
     results: []
@@ -23,12 +23,12 @@ class TableCovid extends React.Component{
   render(){
     var i = 1;
     return(
-      <div className="TabContainer">
+      <div className="TabRSContainer">
         <Card>
           <CardBody>
           <CardTitle tag="h4"
                   className=" mb-2 mb-xl-2 font-weight-bold">
-                  Tabela de Cidades
+                  Cidades do Rio Grande do Sul
                     </CardTitle> 
             </CardBody> 
         <Table striped>
@@ -61,4 +61,4 @@ class TableCovid extends React.Component{
   }
 }
 
-export default TableCovid;
+export default TableCovidRS;

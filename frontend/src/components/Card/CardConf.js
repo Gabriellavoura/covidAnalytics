@@ -5,7 +5,7 @@ import { Card,
          CardTitle,
          CardText } from 'reactstrap';
 
-import './styles.css';
+import './Cardstyles.css';
 import axios from 'axios';
 
 class CardConf extends React.Component{
@@ -26,12 +26,12 @@ state = {
   render(){
 
     return(
-      <div className="infoContainer">
+      <div className="CardContainer">
         <Card className="ConfCard">
           <CardBody >          
             <CardTitle tag="h4"
               className=" mb-2 mb-xl-2 ConfTitle">
-              285,754
+              9056
             </CardTitle>           
             <span className="h8 mb-2 font-weight-bold mb-xl-2 " >
                Casos Confirmados

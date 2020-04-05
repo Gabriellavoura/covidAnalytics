@@ -5,7 +5,7 @@ import { Card,
          CardTitle,
          CardText } from 'reactstrap';
 
-import './styles.css';
+import './Cardstyles.css';
 import axios from 'axios';
 
 class CardNote extends React.Component{
@@ -26,8 +26,8 @@ state = {
   render(){
 
     return(
-      <div className="infoContainer">
-        <Card className="NoteCard">
+      <div className="CardContainer" >
+        <Card className="NoteCard" >
           <CardBody >          
             <CardTitle tag="h6"
               className=" mb-2 mb-xl-4 ">

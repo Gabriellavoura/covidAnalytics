@@ -12,6 +12,7 @@ import CardNote from './components/Card/CardNote';
 import GraphicCovid from './components/GraphicCovid/GraphicCovid';
 import GraphicCovidBr from './components/GraphicCovid/GraphicCovidBr';
 import TableCovid from './components/TableCovid/TableCovid';
+import TableCovidRS from './components/TableCovid/TableCovidRS';
 import ReadApi from './services/ReadApi';
 
 
@@ -84,7 +85,7 @@ function App() {
 
         {/* Tabela 2 */}
         <Col xs="12" sm="12" md="12" xl="6" >          
-          <TableCovid/>
+          <TableCovidRS/>
         </Col>                    
         </Row>
 
