@@ -25,7 +25,9 @@ const Header = (props) => {
       <div className="navContainer">
         <Navbar light expand="md">
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar> <img src={logoFurg} alt="Logo Furg"/>
+          <Nav  className="mr-auto" navbar> 
+            <a href="https://www.furg.br/">
+              <img src={logoFurg} alt="Logo Furg"/></a>
 
           </Nav>
           </Collapse>
@@ -64,7 +66,10 @@ const Header = (props) => {
                 </DropdownMenu>
               </UncontrolledDropdown> */}
             </Nav>
-            <NavbarText><img src={logoC3} alt="Logo C3"/></NavbarText>
+            <NavbarText>
+              <a href="http://www.c3.furg.br/">
+                <img src={logoC3} alt="Logo C3"/></a>
+            </NavbarText>
           </Collapse>
         </Navbar>
       </div>
