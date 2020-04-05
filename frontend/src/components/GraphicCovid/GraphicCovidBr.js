@@ -11,7 +11,7 @@ import Chart from "chart.js";
 
 
 
-class GraphicCovid extends React.Component{
+class GraphicCovidBr extends React.Component{
   chartRef = React.createRef();
   componentDidMount() {
 
@@ -25,9 +25,9 @@ class GraphicCovid extends React.Component{
             datasets: [
               {
                 label: "Sales",
-                data: [86,98,177,177],
+                data: [46,98,177,220],
                 fill: false,
-                borderColor: "#f0932b"
+                borderColor: "#eb4d4b"
               }
             ]
       },
@@ -45,7 +45,7 @@ class GraphicCovid extends React.Component{
           <CardBody>
           <CardTitle tag="h5"
                   className=" mb-2 mb-xl-2 font-weight-bold">
-                  Casos Confirmados no RS 
+                  Casos Confirmados no Brasil 
                     </CardTitle> 
             <div >
                 <canvas
@@ -60,4 +60,4 @@ class GraphicCovid extends React.Component{
   }
 }
 
-export default GraphicCovid;
+export default GraphicCovidBr;

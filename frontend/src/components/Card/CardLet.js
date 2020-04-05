@@ -8,7 +8,7 @@ import { Card,
 import './styles.css';
 import axios from 'axios';
 
-class CardInfo extends React.Component{
+class CardLet extends React.Component{
 state = {
   results: []
 };
@@ -27,14 +27,14 @@ state = {
 
     return(
       <div className="infoContainer">
-        <Card className="TitleCard">
+        <Card className="LetCard">
           <CardBody >          
             <CardTitle tag="h4"
-              className=" mb-2 mb-xl-2 text-danger">
-              285,754
+              className=" mb-2 mb-xl-2 LetTitle">
+              4,0%
             </CardTitle>           
             <span className="h8 mb-2 font-weight-bold mb-xl-2 " >
-               Casos Confirmados
+               Letalidade
              </span>
                                       
           </CardBody>
@@ -44,4 +44,4 @@ state = {
   }
 }
 
-export default CardInfo;
+export default CardLet;

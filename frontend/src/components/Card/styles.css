@@ -1,11 +1,37 @@
 .infoContainer{
-  margin: 0px 0px 10px 0px;
+  margin: 10px 10px 10px 10px !important;
 }
-.TitleCard{
+.ConfCard{
+  font-weight: bold;
+  border-left: 3px solid #f0932b !important;
+  border-radius: 8px ;
+  box-shadow: 2px 2px 5px rgba(109, 109, 109, 0.1);
+}
+
+.ConfTitle{
+  color: #f0932b !important;
+}
+
+.ObCard{
   font-weight: bold;
   border-left: 3px solid #eb4d4b !important;
   border-radius: 8px ;
   box-shadow: 2px 2px 5px rgba(109, 109, 109, 0.1);
+}
+
+.ObTitle{
+  color: #eb4d4b  !important;
+}
+
+.LetCard{
+  font-weight: bold;
+  border-left: 3px solid #686de0 !important;
+  border-radius: 8px ;
+  box-shadow: 2px 2px 5px rgba(109, 109, 109, 0.1);
+}
+
+.LetTitle{
+  color: #686de0   !important;
 }
 
 .NoteCard{

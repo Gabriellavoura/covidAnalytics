@@ -24,22 +24,28 @@ const Header = (props) => {
     return (
       <div className="navContainer">
         <Navbar light expand="md">
-          <NavbarBrand href="/" className="logo-title font-weight-bold">
-            <img src={logoFurg} alt="Logo Furg"/>
-            <img src={logoC3} alt="Logo C3"/>
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="mr-auto" navbar> <img src={logoFurg} alt="Logo Furg"/>
+
+          </Nav>
+          </Collapse>
+          <NavbarBrand href="/" className=" mr-auto logo-title  font-weight-bold">
+                        
             iTeCorona - Rio Grande do Sul</NavbarBrand>
-          <NavbarToggler onClick={toggle} />
+          {/* <NavbarToggler onClick={toggle} /> */}
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               {/* <NavItem>
                 <NavLink href="/components/">Components</NavLink>
               </NavItem> */}
+              {/* 
               <NavItem>
                 <NavLink href="https://github.com/Gabriellavoura">Portal</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/Gabriellavoura">GitHub</NavLink>
               </NavItem>
+              */}
               {/* <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Opções
@@ -58,7 +64,7 @@ const Header = (props) => {
                 </DropdownMenu>
               </UncontrolledDropdown> */}
             </Nav>
-            <NavbarText>Ultima Atualização:04/03/20 - 00:00 </NavbarText>
+            <NavbarText><img src={logoC3} alt="Logo C3"/></NavbarText>
           </Collapse>
         </Navbar>
       </div>

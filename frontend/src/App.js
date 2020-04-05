@@ -5,9 +5,12 @@ import { Container, Col, Row} from 'reactstrap';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Maps from './components/Maps/Maps';
-import CardInfo from './components/Card/CardInfo';
+import CardConf from './components/Card/CardConf';
+import CardOb from './components/Card/CardOb';
+import CardLet from './components/Card/CardLet';
 import CardNote from './components/Card/CardNote';
 import GraphicCovid from './components/GraphicCovid/GraphicCovid';
+import GraphicCovidBr from './components/GraphicCovid/GraphicCovidBr';
 import TableCovid from './components/TableCovid/TableCovid';
 import ReadApi from './services/ReadApi';
 
@@ -36,17 +39,17 @@ function App() {
           <Row >
             {/* Card 1 */}
             <Col xs="12" sm="12" md="4">
-                  <CardInfo/>
+                  <CardConf/>
             </Col>
 
             {/* Card 2 */}
             <Col xs="12" sm="12" md="4">
-                <CardInfo/>
+                <CardOb/>
             </Col>
 
             {/* Card 3 */}
             <Col xs="12" sm="12" md="4">
-                <CardInfo/>
+                <CardLet/>
             </Col>
 
           </Row>
@@ -59,8 +62,6 @@ function App() {
 
         {/* Coluna dos Cards */}
         <Col xs="12" sm="12" md="12" xl="6" >
-
-
             {/* Grafico 1 */}
             <Row>
               <Col xs="12" sm="12" md="12">
@@ -68,16 +69,25 @@ function App() {
               </Col>
             </Row>
 
-            {/* Tabela 2 */}
+            {/* Grafico 2 */}
             <Row>
-              <Col xs="12" sm="12" md="12">
-                  <TableCovid/>
-                  {/* <ReadApi/> */}
+              <Col xs="12" sm="12" md="12">                  
+                  <GraphicCovidBr/>
               </Col>
             </Row>
-
           </Col>
+
+          {/* Tabela 1 */}
+          <Col xs="12" sm="12" md="12" xl="6" >          
+          <TableCovid/>
+          </Col>
+
+        {/* Tabela 2 */}
+        <Col xs="12" sm="12" md="12" xl="6" >          
+          <TableCovid/>
+        </Col>                    
         </Row>
+
       </Container>
       <Footer/>
     </div>

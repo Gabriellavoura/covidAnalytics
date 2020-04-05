@@ -12,19 +12,21 @@ import { NavItem,
     NavbarBrand
     } from "reactstrap";
 
+import './styles.css';
+
 const Footer = (props) => {
     const [isOpen, setIsOpen] = useState(false);
   
     const toggle = () => setIsOpen(!isOpen);
     return (
-      <div className="navContainer">
+      <div className="navContainer FooterContainer">
         
         <Navbar light expand="md">          
             <Nav className="mr-auto" navbar>
               <NavItem>
                 <NavLink >        © 2020{" "}
                     <a
-                    className="font-weight-bold ml-1 text-warning"
+                    className="font-weight-bold ml-1 LinkTitle"
                     href="https://www.furg.br/"          
                     >
                     iTeCorona
@@ -34,14 +36,14 @@ const Footer = (props) => {
             </Nav>
             <Nav >
                 <NavItem>
-                    <NavLink className="text-warning font-weight-bold" href="https://www.furg.br/">
+                    <NavLink className="LinkTitle font-weight-bold" href="https://www.furg.br/">
                     Sobre nós
                     </NavLink>  
                 </NavItem>
             </Nav>    
             <Nav >
                 <NavItem>        
-                    <NavLink className="text-warning font-weight-bold" href="https://www.furg.br/">
+                    <NavLink className="LinkTitle font-weight-bold" href="https://www.furg.br/">
                         Portal
                     </NavLink>
                 </NavItem>                  
@@ -50,7 +52,7 @@ const Footer = (props) => {
                 <NavItem>
                     <NavLink > Powered by: {" "}
                         <a
-                        className="font-weight-bold ml-1 text-warning"
+                        className="font-weight-bold ml-1 LinkTitle"
                         href="http://www.c3.furg.br/"          
                         >
                         Centro de Ciências Computacionais
