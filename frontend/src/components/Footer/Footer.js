@@ -40,8 +40,8 @@ const Footer = (props) => {
               <a className="font-weight-bold ml-1 LinkTitle" href="http://www.c3.furg.br/">
                 Centro de Ciências Computacionais 
               </a>
-              <a href="http://www.c3.furg.br/"> e</a>
-              <a className="font-weight-bold ml-1 LinkTitle"href="http://www.c3.furg.br/">
+              <a> e</a>
+              <a className="font-weight-bold ml-1 LinkTitle"href="https://www.furg.br/">
                 Furg
               </a>
             </NavLink>   

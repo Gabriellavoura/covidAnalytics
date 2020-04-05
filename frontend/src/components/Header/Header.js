@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 
 
-import { Collapse, Navbar, Nav, } from 'reactstrap'
+import { Collapse, Navbar, Nav,NavItem,NavLink } from 'reactstrap'
 import logoFurg from '../../assets/logo.png'
 import logoC3 from '../../assets/C3.png'
 
@@ -18,6 +18,11 @@ export default class Header extends React.Component {
             <Nav  className="mr-auto" navbar> 
               <a href="https://www.furg.br/">
               <img src={logoFurg} alt="Logo Furg"/></a>
+              
+            </Nav>
+
+            <Nav  className="mr-auto" navbar> 
+
             </Nav>
 
           </Collapse>
