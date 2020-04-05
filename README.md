@@ -2,10 +2,7 @@
 
 > Dashboard para visualização dos dados do estado do Rio Grande do Sul
 
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
-One to two paragraph statement about your product and what it does.
+CoronaDash is an open source data visualization platform, to make information about covid-19 easily available in the state of Rio Grande do Sul - Brazil, that's an initiative of IteCorona from Federal University of Rio Grande (FURG) and Centro de Ciências Computacionais (C3).
 
 ## Installation
 Inside the frontend folder run:
