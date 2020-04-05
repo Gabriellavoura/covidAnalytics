@@ -31,7 +31,7 @@ state = {
           <CardBody >          
             <CardTitle tag="h4"
               className=" mb-2 mb-xl-2 LetTitle">
-              4,0%
+              4,2%
             </CardTitle>           
             <span className="h8 mb-2 font-weight-bold mb-xl-2 " >
                Letalidade

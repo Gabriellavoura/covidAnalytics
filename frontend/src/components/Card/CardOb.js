@@ -31,7 +31,7 @@ state = {
           <CardBody >          
             <CardTitle tag="h4"
               className=" mb-2 mb-xl-2 ObTitle">
-              359
+              432
             </CardTitle>           
             <span className="h8 mb-2 font-weight-bold mb-xl-2 " >
                Óbitos

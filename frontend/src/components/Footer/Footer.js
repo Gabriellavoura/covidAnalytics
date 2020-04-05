@@ -50,13 +50,19 @@ const Footer = (props) => {
             </Nav>
             <Nav navbar>
                 <NavItem>
-                    <NavLink > Powered by: {" "}
+                    <NavLink > Powered by: {" "} 
                         <a
                         className="font-weight-bold ml-1 LinkTitle"
                         href="http://www.c3.furg.br/"          
                         >
-                        Centro de Ciências Computacionais
+                        Centro de Ciências Computacionais 
                         </a>
+                        <a> e</a>
+                          <a className="font-weight-bold ml-1 LinkTitle"
+                        href="http://www.c3.furg.br/">
+                          Furg
+
+                         </a>
                     </NavLink>   
                 </NavItem>
             </Nav>

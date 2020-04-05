@@ -21,11 +21,11 @@ class GraphicCovid extends React.Component{
 
       type: 'line',
       data: {
-            labels:["Jan", "Feb", "March","Apil"],
+            labels:["29/03", "31/03","01/04","02/04", "03/04","04/04"],
             datasets: [
               {
                 label: "Casos confirmados",
-                data: [86,98,177,177],
+                data: [86,87,98 ,198 ,277 ,359],
                 fill: false,
                 borderColor: "#f0932b"
               }
