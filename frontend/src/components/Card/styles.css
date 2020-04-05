@@ -7,3 +7,10 @@
   border-radius: 8px ;
   box-shadow: 2px 2px 5px rgba(109, 109, 109, 0.1);
 }
+
+.NoteCard{
+  font-weight: bold;
+  border-left: 3px solid #686de0 !important;
+  border-radius: 8px ;
+  box-shadow: 2px 2px 5px rgba(109, 109, 109, 0.1);
+}

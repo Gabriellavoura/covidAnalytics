@@ -19,6 +19,10 @@ class Maps extends React.Component{
         <div className="cardContainer">
               <Card>
                 <CardBody>
+                    <CardTitle tag="h4"
+                  className=" mb-2 mb-xl-2 font-weight-bold">
+                  Mapa Rio Grande do Sul
+                    </CardTitle> 
                     <Map center={center} zoom={10}>
                     <TileLayer
                       attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
