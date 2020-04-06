@@ -1,10 +1,11 @@
 import React from 'react';
 import './styles.css';
 import { Container, Col, Row} from 'reactstrap';
-
+import { Link } from 'react-router-dom' ;
 import { Collapse, Navbar, Nav,NavItem,NavLink } from 'reactstrap'
 import logoFurg from '../../assets/logo2.png'
 import logoC3 from '../../assets/C3.png'
+import Form from 'reactstrap/lib/Form';
 
 export default class Footer2 extends React.Component {
   render(){
@@ -30,8 +31,8 @@ export default class Footer2 extends React.Component {
                 </a>
                 <a href="https://www.furg.br/"  class="mr-md-5 mr-3 fa-2x LinkTitle" >Portal                            
                 </a>
-                <a href="https://www.furg.br/"  class="mr-md-5 mr-3 fa-2x LinkTitle" >Sobre nós                            
-                </a>
+                <Link href="/about"  class="mr-md-5 mr-3 fa-2x LinkTitle" >Sobre nós                            
+                </Link>
                 <a href="https://github.com/Gabriellavoura/coronaDash"  class="mr-md-5 mr-3 fa-2x LinkTitle" >Github                            
                 </a>
             </div>

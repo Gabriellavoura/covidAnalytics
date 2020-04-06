@@ -22,7 +22,7 @@ const Footer = (props) => {
         </Nav>
         <Nav >
             <NavItem>
-                <NavLink className="LinkTitle font-weight-bold" href="https://www.furg.br/">
+                <NavLink className="LinkTitle font-weight-bold" href="/about">
                 Sobre nós
                 </NavLink>  
             </NavItem>
