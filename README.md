@@ -34,11 +34,11 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 
 [https://github.com/vanessatelles/](https://github.com/vanessatelles)
 
-[https://github.com/Willblemos](https://github.com/Willblemos)
+[https://github.com/Willblemos/](https://github.com/Willblemos)
 
-[https://github.com/Lastopsop](https://github.com/Lastopsop)
+[https://github.com/Lastopsop/](https://github.com/Lastopsop)
 
-[https://github.com/FelpsZMS](https://github.com/FelpsZMS)
+[https://github.com/FelpsZMS/](https://github.com/FelpsZMS)
 
 ## Contributing
 
