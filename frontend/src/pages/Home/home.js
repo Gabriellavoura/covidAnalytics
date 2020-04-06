@@ -8,7 +8,6 @@ import { Container, Col, Row} from '../../../node_modules/reactstrap/lib';
 // Import Components
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import Footer2 from '../../components/Footer/Footer2';
 import Maps from '../../components/Maps/Maps';
 import CardConf from '../../components/Cards/CardConf';
 import CardOb from '../../components/Cards/CardOb';
@@ -92,7 +91,7 @@ export default function Home() {
       </Row>
     </Container>
     {/* Rodapé */}
-    <Footer2/>
+    <Footer/>
   </div>
   );
 }

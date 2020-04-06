@@ -7,7 +7,7 @@ import logoFurg from '../../assets/logo3.png'
 import logoC3 from '../../assets/C3.png'
 import Form from 'reactstrap/lib/Form';
 
-export default class Footer2 extends React.Component {
+export default class Footer extends React.Component {
   render(){
     return (
         
