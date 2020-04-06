@@ -4,6 +4,15 @@ import './styles.css';
 
 import { Card, CardBody, CardTitle } from 'reactstrap';
 import Chart from "chart.js";
+import axios from 'axios';
+var numero = [];
+var data = [];
+var i = 0;
+function formatDate (input) {
+  var datePart = input.match(/\d+/g),  
+  month = datePart[1], day = datePart[2];
+  return day + '/' + month;
+}
 
 class GraphicCovid extends React.Component{
 
@@ -11,17 +20,31 @@ class GraphicCovid extends React.Component{
 
   componentDidMount() {
 
-    const myLineChart = this.chartRef.current.getContext("2d");
+    
+    axios.get("https://brasil.io/api/dataset/covid19/caso/data?state=RS&place_type=state")
+    .then(res => {
+      this.setState({results: res.data.results});
+      for(i=0; i<10; i++){
+        numero[i] = this.state.results[i].confirmed;
+        data[i] = formatDate(this.state.results[i].date);
+      }      
 
+      numero.reverse()
+      data.reverse()
+      
+      
+
+    const myLineChart = this.chartRef.current.getContext("2d");
+    
     new Chart(myLineChart, {
 
       type: 'line',
       data: {
-            labels:["29/03", "31/03","01/04","02/04", "03/04","04/04"],
+            labels: data,
             datasets: [
               {
-                label: "Casos confirmados",
-                data: [86,87,98 ,198 ,277 ,359],
+                label: "Casos Confirmados",
+                data: numero,
                 fill: false,
                 borderColor: "#f0932b"
               }
@@ -29,6 +52,8 @@ class GraphicCovid extends React.Component{
       },
       options: { }
       });
+    });
+
   }
 
   render(){
