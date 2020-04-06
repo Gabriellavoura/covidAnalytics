@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './styles.css';
+import './database/db';
 
 // Import dependencies
 import { Container, Col, Row} from '../../../node_modules/reactstrap/lib';
