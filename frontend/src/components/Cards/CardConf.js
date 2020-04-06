@@ -1,11 +1,19 @@
 import React from 'react';
 import './Cardstyles.css';
-
+import axios from 'axios';
 
 import { Card, CardBody,CardTitle } from 'reactstrap';
 
 
 class CardConf extends React.Component{
+
+  componentDidMount(){
+    axios.get("https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=RS&place_type=state")
+    .then(res => {
+      this.setState({results: res.data.results});     
+      document.getElementById("confirmed").innerHTML = this.state.results[0].confirmed; 
+    });
+  }
 
   render(){
     return(
@@ -13,8 +21,8 @@ class CardConf extends React.Component{
         <Card className="ConfCard">
           <CardBody>
 
-            <CardTitle tag="h4" className=" mb-2 mb-xl-2 ConfTitle">
-              10.278
+            <CardTitle id="confirmed" tag="h4" className=" mb-2 mb-xl-2 ConfTitle">
+              
             </CardTitle>   
 
             <span className="h8 mb-2 font-weight-bold mb-xl-2 " >
@@ -27,5 +35,6 @@ class CardConf extends React.Component{
     );
   }
 }
-
 export default CardConf;
+
+

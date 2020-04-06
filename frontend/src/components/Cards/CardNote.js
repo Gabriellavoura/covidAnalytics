@@ -1,9 +1,24 @@
 import React from 'react';
 import './Cardstyles.css';
-
+import axios from 'axios';
 import { Card, CardBody, CardTitle } from 'reactstrap';
+function formatDate (input) {
+  var datePart = input.match(/\d+/g),
+  year = datePart[0], // get only two digits
+  month = datePart[1], day = datePart[2];
+
+  return day+'/'+month+'/'+year;
+}
 
 class CardNote extends React.Component{
+
+  componentDidMount(){
+    axios.get("https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=RS&place_type=state")
+    .then(res => {
+      this.setState({results: res.data.results});     
+      document.getElementById("date").innerHTML = "Ultima atualização em: "+ formatDate(this.state.results[0].date); 
+    });
+  }
 
   render(){
     return(
@@ -15,8 +30,8 @@ class CardNote extends React.Component{
               Dashboard desenvolvida para visualização dos casos de covid-19 no estado do Rio Grande do Sul
             </CardTitle>    
 
-            <span className="font-weight-bold">
-               Ultima atualização em: 04/04/2020 às 22:10
+            <span id="date" className="font-weight-bold">
+               
             </span>
                                       
           </CardBody>
