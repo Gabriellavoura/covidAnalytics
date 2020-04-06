@@ -3,7 +3,7 @@ import './styles.css';
 import { Container, Col, Row} from 'reactstrap';
 import { Link } from 'react-router-dom' ;
 import { Collapse, Navbar, Nav,NavItem,NavLink } from 'reactstrap'
-import logoFurg from '../../assets/logo2.png'
+import logoFurg from '../../assets/logo3.png'
 import logoC3 from '../../assets/C3.png'
 import Form from 'reactstrap/lib/Form';
 
@@ -17,7 +17,7 @@ export default class Footer2 extends React.Component {
                   <div className="text-center py-3 ">
                                 
                   <a class="mr-md-5 mr-3 fa-2x font-weight-bold" >Dashboard desenvolvida pelo time C3 Analytics,
-                   grupo pertencente a frente tecnologica iTeCorona, uma iniciativa da FURG em parceria 
+                   grupo pertencente a frente tecnologica ItecCorona, uma iniciativa da FURG em parceria 
                    com outras instituições para ajudar no combate e prevenção do Covid-19.                          
                   </a>
 
@@ -27,7 +27,7 @@ export default class Footer2 extends React.Component {
           
           <Col  Col md="12" py="5">
             <div class="text-center py-3 font-weight-bold">© 2020 
-                <a href="https://www.furg.br/" class="mr-md-5 mr-3 fa-2x LinkTitle"> iTeCorona
+                <a href="https://www.furg.br/" class="mr-md-5 mr-3 fa-2x LinkTitle"> ItecCorona
                 </a>
                 <a href="https://www.furg.br/"  class="mr-md-5 mr-3 fa-2x LinkTitle" >Portal                            
                 </a>
