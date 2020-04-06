@@ -1,11 +1,9 @@
 import React from 'react';
 import './styles.css';
-import { Container, Col, Row} from 'reactstrap';
+import { Col, Row} from 'reactstrap';
 import { Link } from 'react-router-dom' ;
-import { Collapse, Navbar, Nav,NavItem,NavLink } from 'reactstrap'
-import logoFurg from '../../assets/logo3.png'
-import logoC3 from '../../assets/C3.png'
-import Form from 'reactstrap/lib/Form';
+import logoFurg from '../../assets/logo3.png';
+import logoC3 from '../../assets/C3.png';
 
 export default class Footer extends React.Component {
   render(){
@@ -16,10 +14,10 @@ export default class Footer extends React.Component {
               <Col md="12" py="5">
                   <div className="text-center py-3 ">
                                 
-                  <a class="mr-md-5 mr-3 fa-2x font-weight-bold" >Dashboard desenvolvida pelo time C3 Analytics,
+                  <p class="mr-md-5 mr-3 fa-2x font-weight-bold" >Dashboard desenvolvida pelo time C3 Analytics,
                    grupo pertencente a frente tecnologica ItecCorona, uma iniciativa da FURG em parceria 
                    com outras instituições para ajudar no combate e prevenção do Covid-19.                          
-                  </a>
+                  </p>
 
                   </div>
               </Col>

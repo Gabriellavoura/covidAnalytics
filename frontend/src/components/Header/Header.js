@@ -2,9 +2,9 @@ import React from 'react';
 import './styles.css';
 
 
-import { Collapse, Navbar, Nav,NavItem,NavLink } from 'reactstrap'
-import logoFurg from '../../assets/logo3.png'
-import logoC3 from '../../assets/C3.png'
+import { Collapse, Navbar, Nav } from 'reactstrap';
+import logoFurg from '../../assets/logo3.png';
+import logoC3 from '../../assets/C3.png';
 
 export default class Header extends React.Component {
   render(){
