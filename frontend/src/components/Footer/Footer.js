@@ -29,7 +29,7 @@ export default class Footer extends React.Component {
                 </a>
                 <a href="https://www.furg.br/"  class="mr-md-5 mr-3 fa-2x LinkTitle" >Portal                            
                 </a>
-                <Link href="/about"  class="mr-md-5 mr-3 fa-2x LinkTitle" >Sobre nós                            
+                <Link to="/about"  class="mr-md-5 mr-3 fa-2x LinkTitle" >Sobre nós                            
                 </Link>
                 <a href="https://github.com/Gabriellavoura/coronaDash"  class="mr-md-5 mr-3 fa-2x LinkTitle" >Github                            
                 </a>
