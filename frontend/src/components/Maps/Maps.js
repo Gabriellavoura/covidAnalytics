@@ -8,13 +8,13 @@ import axios from 'axios';
 
 const center = [-32.0332, -52.0986]
 const cidades = ["São josè do Norte", "Pelotas", "Rio Grande"];
-class Maps extends React.Component{
 
+
+class Maps extends React.Component{
   state={
     geodata: []
   }
   
-
   componentDidMount() {
     
     axios.get('https://nominatim.openstreetmap.org/search?&state=Rio+grande+do+Sul&city='+ cidades[0] +'&limit=1&format=json')
@@ -22,14 +22,10 @@ class Maps extends React.Component{
         const geodata = res.data;
         this.setState({ geodata });
       })
-    
-
   }
 
   render() {
     return (
-
-
 
         <div className="cardContainer">
           <Card>

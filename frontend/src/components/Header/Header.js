@@ -2,9 +2,9 @@ import React from 'react';
 import './styles.css';
 
 
-import { Collapse, Navbar, Nav,NavItem,NavLink } from 'reactstrap'
-import logoFurg from '../../assets/logo.png'
-import logoC3 from '../../assets/C3.png'
+import { Collapse, Navbar, Nav } from 'reactstrap';
+import logoFurg from '../../assets/logo3.png';
+import logoC3 from '../../assets/C3.png';
 
 export default class Header extends React.Component {
   render(){
@@ -28,7 +28,7 @@ export default class Header extends React.Component {
           </Collapse>
 
           <Nav href="/" className=" mr-auto logo-title  font-weight-bold">            
-            iTeCorona - Rio Grande do Sul
+            ItecCorona - Rio Grande do Sul
           </Nav>
 
           <Collapse navbar>
