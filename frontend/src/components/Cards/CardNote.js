@@ -33,6 +33,7 @@ class CardNote extends React.Component{
             <span id="date" className="font-weight-bold">
                
             </span>
+            
                                       
           </CardBody>
         </Card>
