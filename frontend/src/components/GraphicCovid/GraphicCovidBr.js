@@ -20,8 +20,6 @@ function formatDate (input) {
 
 function toDate(input) {
   var aux = input.split('-');
-
-  //console.log(aux)
   
   var date = new Date(aux[0], aux[1] - 1, aux[2]);
 
@@ -38,7 +36,7 @@ class GraphicCovidBr extends React.Component{
     var j = 0;
     var k = 0;
     var dates = [];
-
+    const myLineChart = this.chartRef.current.getContext("2d");
     
     axios.get("https://brasil.io/api/dataset/covid19/caso/data?place_type=state")
     .then(res => {
@@ -63,24 +61,16 @@ class GraphicCovidBr extends React.Component{
 
       var current_date = toDate(dates.sort().reverse()[0])
       
-      console.log(uf_hash)
       for (k = 0; k < 10; k++) {
         for (i = 0; i < estados.length; i++) {
           var uf_set = uf_hash[estados[i]];
           var date_aux = new Date (current_date.getTime())
           var formated_date = formatDate(date_aux);
 
-
-        console.log(estados[i])
         loop1:
           while (true) {
 
             for (j = 0; j < uf_set.length; j++) {
-             /* console.log(uf_set[j])
-
-              console.log(uf_set[j].data + " === " + date_aux)
-              console.log(uf_set[j].data.getTime()  === date_aux.getTime())
-              console.log(uf_set[j].confirmados)*/
 
               if (uf_set[j].data.getTime() === date_aux.getTime()) {
 
@@ -102,7 +92,6 @@ class GraphicCovidBr extends React.Component{
 
 
           } 
-          console.log(confirmed_hash)
 
         current_date.setDate(current_date.getDate() - 1);
       }
