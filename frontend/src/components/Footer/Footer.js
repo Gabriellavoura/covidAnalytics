@@ -14,7 +14,7 @@ export default class Footer extends React.Component {
               <Col md="12" py="5">
                   <div className="text-center py-3 ">
                                 
-                  <p class="mr-md-5 mr-3 fa-2x font-weight-bold" >Dashboard desenvolvida pelo time C3 Analytics,
+                  <p class="mr-md-5 mr-3 fa-2x " >Dashboard desenvolvida pelo time C3 Analytics,
                    grupo pertencente a frente tecnologica ItecCorona, uma iniciativa da FURG em parceria 
                    com outras instituições para ajudar no combate e prevenção do Covid-19.                          
                   </p>
@@ -25,7 +25,7 @@ export default class Footer extends React.Component {
           
           <Col  Col md="12" py="5">
             <div class="text-center py-3 font-weight-bold">© 2020 
-                <a href="https://www.furg.br/" class="mr-md-5 mr-3 fa-2x LinkTitle"> ItecCorona
+                <a href="https://www.furg.br/" class="mr-md-5 mr-3 fa-2x LinkTitle"> ITeCCorona
                 </a>
                 <a href="https://www.furg.br/"  class="mr-md-5 mr-3 fa-2x LinkTitle" >Portal                            
                 </a>
@@ -40,9 +40,9 @@ export default class Footer extends React.Component {
          <Col md="12" py="5">
          <div className="text-center py-3">          
           <a href="https://www.furg.br/">
-            <img src={logoFurg} alt="Logo Furg"/></a>
+            <img class="furgh" src={logoFurg} alt="Logo Furg"/></a>
           <a href="http://www.c3.furg.br/">
-            <img src={logoC3} alt="Logo C3"/></a>  
+            <img class=" c3h"src={logoC3} alt="Logo C3"/></a>  
             </div>
           </Col>
       </div>

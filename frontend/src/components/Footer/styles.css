@@ -5,4 +5,16 @@
 
 .LinkTitle{
     color: #7d51a7 !important;
+    font-weight: bold;
   }
+
+.furgh{
+  height: 48px;
+  width: 120px;
+   }
+  
+.c3h{
+  height: 50px;
+  width: 100px;
+  margin-left: 30px;
+   }

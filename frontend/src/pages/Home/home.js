@@ -23,8 +23,8 @@ export default function Home() {
   return(
     <div className="teste">
     <Header/>
-
-    <Container fluid={true} className="container-principal">
+    <div className="container-principal">
+    <Container fluid={true} >
 
       <Row noGutters={false}>
 
@@ -91,6 +91,7 @@ export default function Home() {
 
       </Row>
     </Container>
+    </div>
     {/* Rodapé */}
     <Footer/>
   </div>

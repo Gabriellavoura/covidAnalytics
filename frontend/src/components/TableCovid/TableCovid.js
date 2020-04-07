@@ -101,7 +101,7 @@ class TableCovid extends React.Component{
       <div className="TabContainer">
         <Card>
           <CardBody>
-            <CardTitle tag="h4" className=" mb-2 mb-xl-2 font-weight-bold">
+            <CardTitle  className="TabTitle mb-2 mb-xl-2 font-weight-bold">
             Cidades da Mesorregião do Sudeste Rio-Grandense
             </CardTitle> 
           </CardBody> 
@@ -113,7 +113,7 @@ class TableCovid extends React.Component{
                 <th>#</th>
                 <th>Cidade</th>
                 <th>Casos Confirmados</th>
-                <th>Mortes</th>
+                <th>Óbitos</th>
               </tr>
             </thead>
 

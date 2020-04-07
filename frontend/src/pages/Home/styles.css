@@ -7,3 +7,17 @@
   margin: 0;
   padding: 0;
 }
+
+.container-principal{
+ 
+  padding: 1000;
+
+}
+
+@media only screen and (min-width: 868px) {
+  /* For desktop: */
+  .container-principal{  
+    margin-left: 135px!important;
+    margin-right: 135px!important;  }
+
+}
