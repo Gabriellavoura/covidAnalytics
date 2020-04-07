@@ -1,14 +1,34 @@
-.navContainer{
-  margin-bottom: 20px;
-  background-color:#f0f0f5;
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.15);
-}
+/* .coluna-header{
+  position: relative;
+  margin-left: 135px;
+  margin-right: 135px;
+} */
+.furg{
+  height: 48px;
+  width: 120px;
+  display: flex;
+ }
 
-img{
-  height: 55px;
-  margin-right: 20px;
+.c3{
+  height: 50px;
+  margin-left: 30px;
+  width: 100px;
 }
 
 .logo-title{
-  font-size: 32px !important;
+  font-size: 20px !important;
+  margin-left: 30px;
+  font-weight: bold;
+} 
+
+.HeaderContainer{
+  margin-right:10px;
+}
+
+@media only screen and (min-width: 868px) {
+  /* For desktop: */
+  .HeaderContainer{  
+    margin-left: 135px!important;
+    margin-right: 135px!important;  }
+
 }
