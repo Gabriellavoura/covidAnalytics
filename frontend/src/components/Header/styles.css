@@ -4,8 +4,10 @@
   margin-right: 135px;
 } */
 .ContainerNav{
-  background-color: #f0f0f5;
   
+  box-shadow: 2px 2px 5px rgba(109, 109, 109, 0.1);
+  border-radius: 2px !important;
+  margin-bottom:20px;
 }
 
 .furg{
@@ -38,9 +40,6 @@
    
 }
 
-.HeaderContainer{
-  margin-bottom:20px;
-}
 
 @media only screen and (min-width: 868px) {
   /* For desktop: */

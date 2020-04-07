@@ -8,7 +8,6 @@ import { Container, Col, Row} from '../../../node_modules/reactstrap/lib';
 
 // Import Components
 import Header from '../../components/Header/Header';
-import HeaderV from '../../components/Header/HeaderV';
 import Footer from '../../components/Footer/Footer';
 import Maps from '../../components/Maps/Maps';
 import CardConf from '../../components/Cards/CardConf';
@@ -23,7 +22,7 @@ import TableCovidRS from '../../components/TableCovid/TableCovidRS';
 export default function Home() {
   return(
     <div className="teste">
-    <HeaderV/>
+    <Header/>
     <div className="container-principal">
     <Container fluid={true} >
 
