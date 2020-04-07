@@ -14,7 +14,7 @@ class TableCovidRS extends React.Component{
     axios.get("https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=RS")
     .then(res => {
       this.setState({results: res.data.results});
-      console.log(this.state.results[1])
+      // console.log(this.state.results[1])
     });
   }
 

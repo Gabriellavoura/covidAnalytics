@@ -1,3 +1,4 @@
+
 var knex = require('knex')({
     client: 'mysql',
     connection: {
@@ -8,4 +9,4 @@ var knex = require('knex')({
     }
   });
 
-console.log(knex.select('*').from('dataset_corona')); 
+// console.log(knex.select('*').from('dataset_corona')); 
