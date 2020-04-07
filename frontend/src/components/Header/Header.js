@@ -30,14 +30,10 @@ const Header = (props)=>{
           <div>
       <Col className="coluna-header" >
 
-
-
-
-
       <Navbar color="light" light expand="md">
         <Nav className="HeaderContainer mr-auto" navbar>
           <Nav>
-
+            <Collapse navbar>
             <NavItem>
               <NavLink href="https://www.furg.br/">
                 <img class="furg" src={logoFurg} alt="Logo Furg"/>
@@ -50,6 +46,8 @@ const Header = (props)=>{
               </NavLink>
             </NavItem>
 
+            </Collapse>
+
             <NavItem>
               <NavLink href="http://www.c3.furg.br/">
                 <p class="logo-title"> ITeCCorona</p>
@@ -59,10 +57,11 @@ const Header = (props)=>{
           </Nav>
         </Nav>
         <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav>
+        <Collapse navbar>
+          <Nav >
             <DropdownToggle nav >
               <Nav>
+                
 
                 <NavItem>
                   <NavLink href="#">

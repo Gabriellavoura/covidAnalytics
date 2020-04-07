@@ -3,6 +3,11 @@
   margin-left: 135px;
   margin-right: 135px;
 } */
+.ContainerNav{
+  background-color: #f0f0f5;
+  
+}
+
 .furg{
   height: 48px;
   width: 120px;
@@ -16,13 +21,25 @@
 }
 
 .logo-title{
-  font-size: 20px !important;
+  font-size: 30px !important;
   margin-left: 30px;
   font-weight: bold;
+  color: #282828 !important;
+  
 } 
 
+@media only screen and (max-width: 800px) {
+  .logo-title{font-size: 20px !important;}
+}
+
+
+.Headerlinks{
+  color: #282828 !important;
+   
+}
+
 .HeaderContainer{
-  margin-right:10px;
+  margin-bottom:20px;
 }
 
 @media only screen and (min-width: 868px) {

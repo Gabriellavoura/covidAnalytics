@@ -33,7 +33,7 @@ class CardNote extends React.Component{
               Dashboard desenvolvida para visualização dos casos de covid-19 no estado do Rio Grande do Sul
             </p>    
 
-            <span id="date" className="font-weight-bold">
+            <span id="date" className="">
                
             </span>
             
