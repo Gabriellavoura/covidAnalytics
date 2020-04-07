@@ -25,15 +25,15 @@ class CardNote extends React.Component{
       <div className="CardContainer" >
         <Card className="NoteCard" >
           <CardBody >  
-          <CardTitle tag="h4" className=" mb-2 mb-xl-4 font-weight-bold">
+          <CardTitle className="NoteCardTitle mb-2 mb-xl-3">
                 ITeCCorona - Rio Grande do Sul
               </CardTitle> 
 
-            <p tag="h6"className=" mb-2 mb-xl-4">
+            <p className="NoteCardConteudo mb-2 mb-xl-3">
               Dashboard desenvolvida para visualização dos casos de covid-19 no estado do Rio Grande do Sul
             </p>    
 
-            <span id="date" className="">
+            <span id="date" className="NoteCardAtt">
                
             </span>
             
