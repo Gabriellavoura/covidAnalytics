@@ -25,13 +25,16 @@ export default class Footer extends React.Component {
           
           <Col  Col md="12" py="5">
             <div class=" footerfonts text-center py-3 font-weight-bold">© 2020 
-                <a href="https://www.furg.br/" class="mr-md-5 mr-3 fa-2x footerfonts LinkTitle"> ITeCCorona
-                </a>
-                <a href="https://www.furg.br/"  class="mr-md-5 mr-3 fa-2x footerfonts LinkTitle" >Portal                            
+                <Link to="/" className="mr-md-5 mr-3 ml-2 fa-2x footerfonts LinkTitle">ITeCCorona
+                </Link>
+            
+                <a href="http://www.riogrande.rs.gov.br/corona/"  class="mr-md-5 mr-3 fa-2x footerfonts LinkTitle" >Portal                            
                 </a>
                 <Link to="/about"  class="mr-md-5 mr-3 fa-2x footerfonts LinkTitle" >Sobre nós                            
                 </Link>
                 <a href="https://github.com/Gabriellavoura/coronaDash"  class="mr-md-5 mr-3 fa-2x footerfonts LinkTitle" >Github                            
+                </a>
+                <a href="https://brasil.io/home"  class="mr-md-5 mr-3 fa-2x footerfonts LinkTitle" >Dados                            
                 </a>
             </div>
           </Col>

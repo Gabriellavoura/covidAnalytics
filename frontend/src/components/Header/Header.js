@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Collapse, Navbar, Nav,NavItem,NavLink,DropdownToggle, NavbarBrand,NavbarToggler } from 'reactstrap'
 import logoFurg from '../../assets/logo3.png'
 import logoC3 from '../../assets/C3.png'
+import { Link } from 'react-router-dom' ;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVirus } from "@fortawesome/free-solid-svg-icons";
 import './styles.css';
@@ -38,8 +39,10 @@ const Header = (props)=>{
 
           </Collapse>
             
-          <NavbarBrand className=" mr-auto logo-title"> <FontAwesomeIcon  icon={faVirus} />             
+          <NavbarBrand className=" mr-auto logo-title">
+            <Link to="/" className="Headerlinks"><FontAwesomeIcon  icon={faVirus} />             
             ITeCCorona  
+            </Link> 
           </NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen}  navbar>          
@@ -54,8 +57,9 @@ const Header = (props)=>{
                 </NavItem>
                 
                 <NavItem>
-                  <NavLink className="LinkTitle"  href="#">
-                    <p>Quem Somos</p>
+                  <NavLink className="LinkTitle"  >
+                    <Link to="/about" className="LinkTitle " >Sobre nós                            
+                    </Link>
                   </NavLink>
                 </NavItem>
 
