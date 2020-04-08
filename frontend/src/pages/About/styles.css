@@ -1,0 +1,23 @@
+.conteudoCardAbout{
+    margin-bottom: 20px!important;    
+    padding: 1000;
+  
+  }
+  
+  @media only screen and (min-width: 868px) {
+    /* For desktop: */
+    .conteudoCardAbout{  
+      margin-left: 135px!important;
+      margin-right: 135px!important;  }
+  
+  }
+.cardConteudoAbout{
+    margin-left: 135px!important;
+    margin-right: 135px!important;
+}
+
+
+.fotos{
+    height: 24px!important;
+    width: 20px!important;
+}

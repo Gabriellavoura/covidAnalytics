@@ -19,14 +19,15 @@ const Header = (props)=>{
             <Nav  className="mr-auto" navbar> 
             <NavItem>
                 <NavLink href="https://www.furg.br/">
-                <img class="furg" src={logoFurg} alt="Logo Furg"/>
+                  <img class="furg" src={logoFurg} alt="Logo Furg"/>
                 </NavLink>              
               </NavItem>
             <NavItem>
-            <NavLink href="http://www.c3.furg.br/">
+              <NavLink href="http://www.c3.furg.br/">
                 <img class="c3" src={logoC3} alt="Logo C3"/>
-                </NavLink>   
+              </NavLink>   
             </NavItem>  
+            
             </Nav>
 
             <Nav  className="mr-auto" navbar> 
@@ -35,18 +36,18 @@ const Header = (props)=>{
 
           </Collapse>
             
-          <NavbarBrand href="/" className=" mr-auto logo-title">            
+          <NavbarBrand className=" mr-auto logo-title">            
             ITeCCorona
           </NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen}  navbar>          
             <Nav className="mr-auto" navbar>
             </Nav>
-            <DropdownToggle nav >
+            <DropdownToggle color>
             <Nav>
                 <NavItem>
-                    <NavLink className="LinkTitle" href="#">
-                        <p>Sobre</p>
+                    <NavLink className="LinkTitle" href="http://www.riogrande.rs.gov.br/corona/">
+                        <p>Portal</p>
                     </NavLink>
                 </NavItem>
                 
@@ -57,7 +58,7 @@ const Header = (props)=>{
                 </NavItem>
 
                 <NavItem>
-                  <NavLink className="LinkTitle"  href="#">
+                  <NavLink className="LinkTitle"  href="https://github.com/Gabriellavoura/coronaDash">
                     <p>Github</p>
                   </NavLink>
                 </NavItem>
