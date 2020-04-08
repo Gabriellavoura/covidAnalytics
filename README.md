@@ -11,6 +11,8 @@ npm install
 npm start
 ```
 
+
+
 ## Release History
 
 * 0.0.1
@@ -20,15 +22,19 @@ npm start
 
 Gabriel Lavoura – [@gabriel_lavoura](https://twitter.com/gabriel_lavoura)
 
-Vanessa Telles - [@tellesvanessa07](https://twitter.com/tellesvanessa07)
+Vanessa Telles – [@tellesvanessa07](https://twitter.com/tellesvanessa07)
 
-Willian Lemos - 
+Willian Lemos –
 
-Augusto Lamin - 
+Augusto Lamin –
 
-Felipe Marques - 
+Felipe Marques –
+
+Lucas Ribeiro –
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
+
+---
 
 [https://github.com/gabriellavoura/](https://github.com/Gabriellavoura)
 
@@ -39,6 +45,8 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [https://github.com/Lastopsop/](https://github.com/Lastopsop)
 
 [https://github.com/FelpsZMS/](https://github.com/FelpsZMS)
+
+[https://github.com/luucasrb/](https://github.com/luucasrb)
 
 ## Contributing
 
