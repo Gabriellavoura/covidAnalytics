@@ -7,17 +7,51 @@
   @media only screen and (min-width: 868px) {
     /* For desktop: */
     .conteudoCardAbout{  
-      margin-left: 135px!important;
-      margin-right: 135px!important;  }
+      margin-left: 200px!important;
+      margin-right: 200px!important;  }
   
   }
-.cardConteudoAbout{
-    margin-left: 135px!important;
-    margin-right: 135px!important;
-}
 
 
 .fotos{
-    height: 24px!important;
-    width: 20px!important;
+  border-radius: 50%!important;
+  height: 200px!important;
+  width: 190px!important;
+  
+}
+
+.TituloTime{
+  font-size: 20px!important;
+  font-weight: bold;
+  color: black;
+
+}
+
+.graduacaoTime{
+  font-size: 14px!important;
+
+}
+
+.resumoTime{
+  font-size: 16px!important;
+  text-align: justify;
+}
+
+
+
+.titulosAbout{
+  font-size: 30px!important;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+  .titulosAbout{font-size: 20px !important;}
+}
+
+.aboutexto{
+  
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: justify;
+
 }

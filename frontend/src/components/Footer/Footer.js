@@ -12,9 +12,9 @@ export default class Footer extends React.Component {
       <div className="container">          
           <Row >
               <Col md="12" py="5">
-                  <div className="text-center py-3 ">
+                  <div className=" text-center py-3 ">
                                 
-                  <p class="mr-md-5 mr-3 fa-2x " >Dashboard desenvolvida pelo time C3 Analytics,
+                  <p class=" footerfonts mr-md-5 mr-3 fa-2x " >Dashboard desenvolvida pelo time C3 Analytics,
                    grupo pertencente a frente tecnologica ItecCorona, uma iniciativa da FURG em parceria 
                    com outras instituições para ajudar no combate e prevenção do Covid-19.                          
                   </p>
@@ -24,14 +24,14 @@ export default class Footer extends React.Component {
           </Row>
           
           <Col  Col md="12" py="5">
-            <div class="text-center py-3 font-weight-bold">© 2020 
-                <a href="https://www.furg.br/" class="mr-md-5 mr-3 fa-2x LinkTitle"> ITeCCorona
+            <div class=" footerfonts text-center py-3 font-weight-bold">© 2020 
+                <a href="https://www.furg.br/" class="mr-md-5 mr-3 fa-2x footerfonts LinkTitle"> ITeCCorona
                 </a>
-                <a href="https://www.furg.br/"  class="mr-md-5 mr-3 fa-2x LinkTitle" >Portal                            
+                <a href="https://www.furg.br/"  class="mr-md-5 mr-3 fa-2x footerfonts LinkTitle" >Portal                            
                 </a>
-                <Link to="/about"  class="mr-md-5 mr-3 fa-2x LinkTitle" >Sobre nós                            
+                <Link to="/about"  class="mr-md-5 mr-3 fa-2x footerfonts LinkTitle" >Sobre nós                            
                 </Link>
-                <a href="https://github.com/Gabriellavoura/coronaDash"  class="mr-md-5 mr-3 fa-2x LinkTitle" >Github                            
+                <a href="https://github.com/Gabriellavoura/coronaDash"  class="mr-md-5 mr-3 fa-2x footerfonts LinkTitle" >Github                            
                 </a>
             </div>
           </Col>
