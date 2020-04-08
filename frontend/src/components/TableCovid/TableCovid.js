@@ -87,9 +87,6 @@ class TableCovid extends React.Component{
       var values = keys.map(function(v) { return hash[v]; });
       values = values.sort(dynamicsort("confirmed", "desc"))
       this.setState({results: values});
-
-
-
     });
 
   }

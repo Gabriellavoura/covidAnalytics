@@ -7,23 +7,35 @@ import MarkerClusterGroup from "react-leaflet-markercluster";
 import axios from 'axios';
 
 const center = [-32.0332, -52.0986]
-const cidades = ["São josè do Norte", "Pelotas", "Rio Grande"];
+// const cidades = ["São josè do Norte", "Pelotas", "Rio Grande"];
 
+var cidade = {};
 
 class Maps extends React.Component{
   state={
-    geodata: []
+    geodata: [],
+    dadosBrutos: []
   }
   
   componentDidMount() {
     
-    axios.get('https://nominatim.openstreetmap.org/search?&state=Rio+grande+do+Sul&city='+ cidades[0] +'&limit=1&format=json')
+    axios.get('https://brasil.io/api/dataset/covid19/caso/data?state=RS')
+    .then( res => {
+        const dadosBrutos = res.data;
+        this.setState({ dadosBrutos }); 
+    })
+
+
+    var cidades = this.state.dadosBrutos[0];
+
+    axios.get('https://nominatim.openstreetmap.org/search?&state=Rio+grande+do+Sul&city='+ cidades +'&limit=1&format=json')
       .then( res => {
         const geodata = res.data;
         this.setState({ geodata });
       })
+    
   }
-
+  
   render() {
     return (
 
