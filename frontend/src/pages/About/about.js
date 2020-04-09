@@ -10,6 +10,7 @@ import { faGlobeAmericas} from "@fortawesome/free-solid-svg-icons";
 import eduardo from '../../assets/eduardo.jpeg'
 import glauber from '../../assets/glauber.jpeg'
 import gabriel from '../../assets/gabriel.jpeg'
+import felipe from '../../assets/felipe.jpeg'
 import vanessa from '../../assets/vanessa.png'
 import defaultfoto from '../../assets/defaultfoto.png'
 import lucas from '../../assets/lucas.jpg'
@@ -208,7 +209,7 @@ export default function About(){
                     </div>                   
                   </Col>
                   <Col md="12" sm="12" xl="4"xs="12" py="5" mx="2">
-                  <img class="fotos" src={defaultfoto} alt="foto8"/>
+                  <img class="fotos" src={felipe} alt="foto8"/>
                     <CardTitle  className="TituloTime mt-3">Felipe Marques</CardTitle>
                     <p className="graduacaoTime my-2 mb-2 text-center ">Graduando em Eng.Comp. </p>
                     <p className="my-2 resumoTime">Lorem ipsum dolor sit amet, consectetur 
@@ -216,10 +217,10 @@ export default function About(){
                     accumsan. 
                     </p>
                     <div className="mb-5">
-                    <Button className="Headerlinks" color="link" href="http://lattes.cnpq.br/5851601274050374">
+                    <Button className="Headerlinks" color="link" href="#">
                       <FontAwesomeIcon icon={faGlobeAmericas} />
                     </Button>
-                    <Button className="Headerlinks" color="link" href="http://lattes.cnpq.br/5851601274050374">
+                    <Button className="Headerlinks" color="link" href="https://www.linkedin.com/in/felipesouzamarques/">
                       <FontAwesomeIcon icon={faLinkedin} />
                     </Button> 
                     <Button className="Headerlinks"  color="link" href="https://github.com/FelpsZMS">
