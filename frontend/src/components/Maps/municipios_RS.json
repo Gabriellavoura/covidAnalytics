@@ -10,7 +10,7 @@
     "codigo_ibge": 4300059,
     "name": "Água Santa",
     "lat": -28.1672,
-    "lon": -52.031,
+    "lon": -52031,
     "uf": 43
   },
   {
@@ -94,7 +94,7 @@
     "codigo_ibge": 4300646,
     "name": "Ametista do Sul",
     "lat": -27.3607,
-    "lon": -53.183,
+    "lon": -53183,
     "uf": 43
   },
   {
@@ -325,7 +325,7 @@
     "codigo_ibge": 4302238,
     "name": "Boa Vista do Incra",
     "lat": -28.8185,
-    "lon": -53.391,
+    "lon": -53391,
     "uf": 43
   },
   {
@@ -381,7 +381,7 @@
     "codigo_ibge": 4302584,
     "name": "Bozano",
     "lat": -28.3659,
-    "lon": -53.772,
+    "lon": -53772,
     "uf": 43
   },
   {
@@ -416,13 +416,13 @@
     "codigo_ibge": 4302907,
     "name": "Cacequi",
     "lat": -29.8883,
-    "lon": -54.822,
+    "lon": -54822,
     "uf": 43
   },
   {
     "codigo_ibge": 4303004,
     "name": "Cachoeira do Sul",
-    "lat": -30.033,
+    "lat": -30033,
     "lon": -52.8928,
     "uf": 43
   },
@@ -436,7 +436,7 @@
   {
     "codigo_ibge": 4303202,
     "name": "Cacique Doble",
-    "lat": -27.767,
+    "lat": -27767,
     "lon": -51.6597,
     "uf": 43
   },
@@ -464,7 +464,7 @@
   {
     "codigo_ibge": 4303558,
     "name": "Camargo",
-    "lat": -28.588,
+    "lat": -28588,
     "lon": -52.2003,
     "uf": 43
   },
@@ -541,14 +541,14 @@
   {
     "codigo_ibge": 4304408,
     "name": "Canela",
-    "lat": -29.356,
+    "lat": -29356,
     "lon": -50.8119,
     "uf": 43
   },
   {
     "codigo_ibge": 4304507,
     "name": "Canguçu",
-    "lat": -31.396,
+    "lat": -31396,
     "lon": -52.6783,
     "uf": 43
   },
@@ -598,7 +598,7 @@
     "codigo_ibge": 4304689,
     "name": "Capela de Santana",
     "lat": -29.6961,
-    "lon": -51.328,
+    "lon": -51328,
     "uf": 43
   },
   {
@@ -688,7 +688,7 @@
   {
     "codigo_ibge": 4305132,
     "name": "Cerro Branco",
-    "lat": -29.657,
+    "lat": -29657,
     "lon": -52.9406,
     "uf": 43
   },
@@ -731,13 +731,13 @@
     "codigo_ibge": 4305371,
     "name": "Charrua",
     "lat": -27.9493,
-    "lon": -52.015,
+    "lon": -52015,
     "uf": 43
   },
   {
     "codigo_ibge": 4305405,
     "name": "Chiapetta",
-    "lat": -27.923,
+    "lat": -27923,
     "lon": -53.9419,
     "uf": 43
   },
@@ -793,7 +793,7 @@
   {
     "codigo_ibge": 4305801,
     "name": "Constantina",
-    "lat": -27.732,
+    "lat": -27732,
     "lon": -52.9938,
     "uf": 43
   },
@@ -842,7 +842,7 @@
   {
     "codigo_ibge": 4305975,
     "name": "Coxilha",
-    "lat": -28.128,
+    "lat": -28128,
     "lon": -52.3023,
     "uf": 43
   },
@@ -863,14 +863,14 @@
   {
     "codigo_ibge": 4306072,
     "name": "Cristal do Sul",
-    "lat": -27.452,
+    "lat": -27452,
     "lon": -53.2422,
     "uf": 43
   },
   {
     "codigo_ibge": 4306106,
     "name": "Cruz Alta",
-    "lat": -28.645,
+    "lat": -28645,
     "lon": -53.6048,
     "uf": 43
   },
@@ -905,7 +905,7 @@
   {
     "codigo_ibge": 4306353,
     "name": "Dezesseis de Novembro",
-    "lat": -28.219,
+    "lat": -28219,
     "lon": -55.0617,
     "uf": 43
   },
@@ -933,7 +933,7 @@
   {
     "codigo_ibge": 4306452,
     "name": "Dois Lajeados",
-    "lat": -28.983,
+    "lat": -28983,
     "lon": -51.8396,
     "uf": 43
   },
@@ -955,7 +955,7 @@
     "codigo_ibge": 4306551,
     "name": "Dom Pedro de Alcântara",
     "lat": -29.3639,
-    "lon": -49.853,
+    "lon": -49853,
     "uf": 43
   },
   {
@@ -975,7 +975,7 @@
   {
     "codigo_ibge": 4306759,
     "name": "Doutor Ricardo",
-    "lat": -29.084,
+    "lat": -29084,
     "lon": -51.9972,
     "uf": 43
   },
@@ -996,14 +996,14 @@
   {
     "codigo_ibge": 4306908,
     "name": "Encruzilhada do Sul",
-    "lat": -30.543,
+    "lat": -30543,
     "lon": -52.5204,
     "uf": 43
   },
   {
     "codigo_ibge": 4306924,
     "name": "Engenho Velho",
-    "lat": -27.706,
+    "lat": -27706,
     "lon": -52.9145,
     "uf": 43
   },
@@ -1046,7 +1046,7 @@
     "codigo_ibge": 4307203,
     "name": "Erval Grande",
     "lat": -27.3926,
-    "lon": -52.574,
+    "lon": -52574,
     "uf": 43
   },
   {
@@ -1094,7 +1094,7 @@
   {
     "codigo_ibge": 4307708,
     "name": "Esteio",
-    "lat": -29.852,
+    "lat": -29852,
     "lon": -51.1841,
     "uf": 43
   },
@@ -1213,7 +1213,7 @@
   {
     "codigo_ibge": 4308607,
     "name": "Garibaldi",
-    "lat": -29.259,
+    "lat": -29259,
     "lon": -51.5352,
     "uf": 43
   },
