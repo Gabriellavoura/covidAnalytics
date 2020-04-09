@@ -1,13 +1,14 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import {Container,Row,Col,Card,CardBody, CardTitle,CardFooter, Button } from 'reactstrap';
+import {Container,Row,Col,Card,CardBody, CardTitle, Button } from 'reactstrap';
 import './styles.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobeAmericas} from "@fortawesome/free-solid-svg-icons";
 import eduardo from '../../assets/eduardo.jpeg'
+import glauber from '../../assets/glauber.jpeg'
 import gabriel from '../../assets/gabriel.jpeg'
 import vanessa from '../../assets/vanessa.png'
 import defaultfoto from '../../assets/defaultfoto.png'
@@ -71,22 +72,22 @@ export default function About(){
                                    
                   </Col>
                   <Col md="12" sm="12" xl="4"xs="12" py="5" mx="2" >
-                    <img class="fotos" src={defaultfoto} alt="foto9"/>
+                    <img class="fotos" src={glauber} alt="foto9"/>
                     <CardTitle className="TituloTime mt-3">Glauber Gonçalves</CardTitle>
                     <p className="graduacaoTime my-2 mb-2 text-center ">Dr. em Ciências Geodésicas  </p> 
-                    <p className="my-2  resumoTime">Professor do Centro de Ciências Computacionais 
-                    coordenador do Grupo de Pesquisa em Gerenciamento de Informações
+                    <p className="my-2  resumoTime">Professor do Centro de Ciências Computacionais e
+                    coordenador do Laboratório de Tecnologia da Geoinformação
                     </p>
                     <div className="mb-5">
                     <Button className="Headerlinks" color="link" href="http://lattes.cnpq.br/2814370196736373">
                       <FontAwesomeIcon icon={faGlobeAmericas} />
                     </Button>
-                    <Button className="Headerlinks" color="link" href="https://www.linkedin.com/in/enborges/">
+                    {/* <Button className="Headerlinks" color="link" href="https://www.linkedin.com/in/enborges/">
                     <FontAwesomeIcon icon={faLinkedin} />
                     </Button> 
                     <Button className="Headerlinks"  color="link" href="https://github.com/enborges">
                       <FontAwesomeIcon icon={faGithub} />
-                    </Button>
+                    </Button> */}
                     </div>
                                    
                   </Col>
