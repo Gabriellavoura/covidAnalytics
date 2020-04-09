@@ -6,6 +6,12 @@ import { Card, CardBody, CardTitle } from 'reactstrap';
 import MarkerClusterGroup from "react-leaflet-markercluster";
 import axios from 'axios';
 
+//const fs = require('fs');
+var json = require('../../assets/municipios_RS.json');
+var obj = {};
+var array_obj = [];
+var hash = {};
+
 const center = [-32.0332, -52.0986]
 // const cidades = ["São josè do Norte", "Pelotas", "Rio Grande"];
 
@@ -18,12 +24,48 @@ class Maps extends React.Component{
   }
   
   componentDidMount() {
+    var i = 0;
+    var j = 0;
+    var k = 0;
+  //  var markerGroup = L.layerGroup().addTo(map);
+
+
+
+   // let rawdata = JSON.parse(fs.readFileSync('csvjson.json', 'utf8'));
+   // let json = JSON.parse(rawdata);
     
-    axios.get('https://brasil.io/api/dataset/covid19/caso/data?state=RS')
+    axios.get('https://brasil.io/api/dataset/covid19/caso/data?date=&state=RS&city=&place_type=city&is_last=True&city_ibge_code=&order_for_place=')
     .then( res => {
         const dadosBrutos = res.data;
+
+        for (k= 0; k < json.length; k++) {
+          hash[json[k].codigo_ibge] = "N/D";
+
+        }
+
+        for (j = 0; j < res.data.results.length; j++) {
+          hash[res.data.results[j].city_ibge_code] = res.data.results[j].confirmed;
+    
+        }
+
+        for (i = 0; i < json.length; i++) {
+          // if (json[i].uf === 43) {
+             obj = {nome: json[i].name, lat: json[i].lat, lng: json[i].lon, confirmed: hash[json[i].codigo_ibge], codigo_ibge: json[i].codigo_ibge}
+             array_obj.push(obj)
+        //   }
+     
+         }
+     
+
         this.setState({ dadosBrutos }); 
+
     })
+
+    console.log(hash)
+
+    console.log(array_obj)
+
+    //console.log(obj)
 
 
     var cidades = this.state.dadosBrutos[0];
@@ -49,14 +91,23 @@ class Maps extends React.Component{
 
               </CardBody>
 
-              <Map center={center} zoom={10}>
+             <Map center={center} zoom={10}>
 
                 <TileLayer
                   attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
 
-                <MarkerClusterGroup>
+               
+                {array_obj.map(({lat, lng, nome, confirmed}, index) => (
+                      <Marker position={[lat, lng]} key={index}>
+                          <Popup>
+                            {nome} | Casos confirmados: {confirmed}
+                          </Popup>
+                      </Marker>
+                    ))}                
+
+         {/*       <MarkerClusterGroup>
 
                   {this.state.geodata.map( geodata => 
                     <Marker position={[geodata.lat, geodata.lon]}>
@@ -78,7 +129,7 @@ class Maps extends React.Component{
                       </Popup>
                     </Marker>
                   )}
-                </MarkerClusterGroup> 
+                </MarkerClusterGroup> */}
 
               </Map>
           </Card> 
