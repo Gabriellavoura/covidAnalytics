@@ -14,6 +14,7 @@ import CardConf from '../../components/Cards/CardConf';
 import CardOb from '../../components/Cards/CardOb';
 import CardLet from '../../components/Cards/CardLet';
 import CardNote from '../../components/Cards/CardNote';
+import CardAviso from '../../components/Cards/CardAviso';
 import GraphicCovid from '../../components/GraphicCovid/GraphicCovid';
 import GraphicCovidBr from '../../components/GraphicCovid/GraphicCovidBr';
 import TableCovid from '../../components/TableCovid/TableCovid';
@@ -29,9 +30,10 @@ export default function Home() {
       <Row noGutters={false}>
 
         <Col xs="12" sm="12" md="12" xl={{ size: 8, offset: 2 }}>
-
-          {/* Card de Informações */}
-          <CardNote/>
+          {/* Card de Aviso */}
+          <CardAviso/>
+           {/* Card de Informações */}
+          <CardNote/>          
 
         </Col>
 

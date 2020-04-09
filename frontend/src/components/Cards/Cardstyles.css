@@ -42,6 +42,12 @@
   box-shadow: 2px 2px 5px rgba(109, 109, 109, 0.1);
 }
 
+.AvisoCard{
+  box-shadow: 2px 2px 5px rgba(109, 109, 109, 0.1);
+  border-left: 3px solid #a0a0a0 !important;
+
+}
+
 .NoteCardTitle{
   font-weight: bold;  
   font-size: 20px;

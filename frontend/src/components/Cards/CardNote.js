@@ -22,8 +22,8 @@ class CardNote extends React.Component{
 
   render(){
     return(
-      <div className="CardContainer" >
-        <Card className="NoteCard" >
+      <div className="CardContainer">
+        <Card className="NoteCard">
           <CardBody >  
           <CardTitle className="NoteCardTitle mb-2 mb-xl-3">
                 ITeCCorona - Rio Grande do Sul
