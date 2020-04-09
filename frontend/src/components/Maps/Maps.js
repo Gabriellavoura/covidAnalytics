@@ -1,14 +1,28 @@
 import React from 'react'
 import './styles.css';
 
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import { Map, TileLayer, Marker, Popup,icon } from 'react-leaflet';
 import { Card, CardBody, CardTitle } from 'reactstrap';
+import L from 'leaflet';
+import MarkerClusterGroup from "react-leaflet-markercluster";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faVirus, faArrowAltCircleDown, faPeace, faPeopleArrows, faUser, faCalendar}  from "@fortawesome/free-solid-svg-icons";
+import redFilledMarker from '../../assets/icon.png';
 import axios from 'axios';
 
 var json = require('../../database/municipios_RS.json');
 var obj = {};
+var obj_confirmed ={};
 var array_obj = [];
+var array_obj_confirmed = [];
 var hash = {};
+var hash1 = {};
+
+const myIcon = L.icon({
+  iconUrl: redFilledMarker ,
+  iconSize: [40, 40],
+  iconAnchor: [20, 40],
+});
 
 const center = [-32.0332, -52.0986]
 //var cidade = {};
@@ -16,7 +30,7 @@ const center = [-32.0332, -52.0986]
 class Maps extends React.Component{
   state={
     geodata: [],
-    dadosBrutos: []
+    dadosBrutos:[]
   }
   
   componentDidMount() {
@@ -37,36 +51,47 @@ class Maps extends React.Component{
           hash[res.data.results[j].city_ibge_code] = res.data.results[j].confirmed;
     
         }
-
+        
+        // Imprime todas cidades
         for (i = 0; i < json.length; i++) {
              obj = {nome: json[i].name, lat: json[i].lat, lng: json[i].lon, confirmed: hash[json[i].codigo_ibge], codigo_ibge: json[i].codigo_ibge}
              array_obj.push(obj)
+             
      
          }
+
+        // Imprime o numero de cidades com casos confirmados.
+         for (i = 0; i < json.length; i++) {
+          var casos = hash[json[i].codigo_ibge];
+
+          if(casos) {
+            // console.log("entrou") 
+            obj_confirmed = {nome: json[i].name, 
+                             lat: json[i].lat, 
+                             lng: json[i].lon, 
+                             confirmed: hash[json[i].codigo_ibge], 
+                             codigo_ibge: json[i].codigo_ibge }
+
+            array_obj_confirmed.push(obj_confirmed)
+
+            console.log(obj_confirmed)    
+          }       
+      }
      
 
         this.setState({ dadosBrutos }); 
 
     })
 
-    console.log(hash)
+    // console.log(hash)
 
-    console.log(array_obj)
+    console.log(obj)
 
-    //console.log(obj)
-
-
-    var cidades = this.state.dadosBrutos[0];
-
-    axios.get('https://nominatim.openstreetmap.org/search?&state=Rio+grande+do+Sul&city='+ cidades +'&limit=1&format=json')
-      .then( res => {
-        const geodata = res.data;
-        this.setState({ geodata });
-      })
     
   }
   
   render() {
+
     return (
 
         <div className="cardContainer">
@@ -86,39 +111,28 @@ class Maps extends React.Component{
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
 
-               
-                {array_obj.map(({lat, lng, nome, confirmed}, index) => (
-                      <Marker position={[lat, lng]} key={index}>
-                          <Popup>
-                            {nome} | Casos confirmados: {confirmed}
-                          </Popup>
-                      </Marker>
-                    ))}                
-
-         {/*       <MarkerClusterGroup>
-
-                  {this.state.geodata.map( geodata => 
-                    <Marker position={[geodata.lat, geodata.lon]}>
-                      <Popup
-                      minWidth={200}
-                      closeButton={false}
-                      onClose={popup => console.warn('popup-close', popup)}>
-                        <div>
-                          <b>{geodata.type}</b>
-                          <br/>
-                          <b>{geodata.lat}</b>
-                          <br/>
-                          <b>{geodata.lon}</b>
-                          <br/>
-                          <b>{geodata.importance}</b>
-                          
-                          <p>I am a lonely popup.</p>
-                        </div>
-                      </Popup>
-                    </Marker>
-                  )}
-                </MarkerClusterGroup> */}
-
+            {/* <MarkerClusterGroup> */}
+                  {array_obj_confirmed.map(({lat, lng, nome, confirmed,pop_estimada}, index) => (
+                      
+                        <Marker position={[lat, lng]} key={index} icon={myIcon} attribution="confirmed">
+                            <Popup minWidth={250}>
+                              <div className="popUp-container">
+                                <div className="popUp-title">{nome}</div>
+                                <div className="popUp-body">
+                                  <ul>
+                                    <li><FontAwesomeIcon icon={faVirus}/> Casos confirmados: {confirmed}</li>
+                                    <li><FontAwesomeIcon icon={faUser}/> População Estimada 2019: {pop_estimada}</li>
+                                    <li><FontAwesomeIcon icon={faCalendar}/> Data da ultima atualização: {pop_estimada}</li>
+                                    
+                                  </ul>
+                                  
+                                </div>
+                              </div>
+                               |
+                            </Popup>
+                        </Marker>
+                      
+                      ))}   
               </Map>
           </Card> 
         </div>

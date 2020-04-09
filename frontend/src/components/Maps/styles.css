@@ -9,3 +9,29 @@
   box-shadow: 2px 2px 5px rgba(109, 109, 109, 0.1);
   border-radius: 2px !important;
 }
+
+Marker{
+  font-size: large;
+}
+PopUp{
+  width: 300px;
+}
+.popUp-container{
+  margin: 0;
+  padding: 0;
+}
+.popUp-title{
+  font-size: 2em;
+  font-weight: 700 !important;
+
+}
+.popUp-body{
+  margin-top: 3px;
+  padding-left: 3px;
+  font-size: 1.2em;
+
+}
+.popUp-body ul li{
+  list-style: none;
+
+}
