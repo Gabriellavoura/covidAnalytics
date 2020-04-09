@@ -10,6 +10,7 @@ import { faGlobeAmericas} from "@fortawesome/free-solid-svg-icons";
 import eduardo from '../../assets/eduardo.jpeg'
 import gabriel from '../../assets/gabriel.jpeg'
 import vanessa from '../../assets/vanessa.png'
+import defaultfoto from '../../assets/defaultfoto.png'
 import lucas from '../../assets/lucas.jpg'
 import willian from '../../assets/willian.jpg'
 import augusto from '../../assets/augusto.jpg'
@@ -32,14 +33,17 @@ export default function About(){
                   Quem somos              
                   <hr className="my-2 mb-5" />
                 </CardTitle>    
-                <p className="my-2 mb-2 aboutexto"> C3 Analytcis é um grupo de pesquisa e desenvolvimento o qual
-                tem como objetivo realizar a manipulação, análise e visualização de dados sobre a Covid-19.</p>
-                <p className="my-2 mb-2 aboutexto">Esse grupo faz parte da frente tecnologia ITeCCorona, uma iniciativa da FURG em parceria
-                com outras instituições para ajudar no combate e prevenção do Covid-19. </p>
-                <p className="my-2 mb-5 aboutexto">O time C3 Analytics é composto por docentes e discentes do Centro de Ciências Computacionais da 
-                Universidade Federal do Rio Grande - FURG.</p>
+                <p className="my-2 mb-2 aboutexto"> O Grupo de Trabalho C3-Analytics é formado por uma pequena equipe de professores e alunos de 
+                graduação e pós-graduação do Centro de Ciências Computacionais - C3. É parte da frente de ItecCorona, que desenvolve atividades 
+                de pesquisa, extensão e inovação na Universidade Federal do Rio Grande - FURG sobre COVID-19. </p>
+                <p className="my-2 mb-2 aboutexto">O principal objetivo do GT C3-Analytics é permitir a visualização e a análise de dados da 
+                COVID-19 nas regiões de abrangência da FURG. A equipe responsável pelo desenvolvimento desta plataforma de coleta e visualização
+                 de dados é detalhada abaixo. </p>
+                <p className="my-2 mb-5 aboutexto">Estes e outros integrantes do GT ainda atuam de forma conjunta com a prefeitura municipal de 
+                Rio Grande para implantar  plataforma desenvolvida no portal de serviços relacionados à pandemia do novo Cononavírus e na elaboração
+                 de outras análises a serem publicadas no futuro, principalmente ligadas ao sistema de tele-triagem.</p>
                 <CardTitle className="titulosAbout mb-2">
-                  Equipe
+                  Equipe de Desenvolvedores
                   <hr className="my-2 mb-5" />  
                 </CardTitle>          
                               
@@ -67,7 +71,7 @@ export default function About(){
                                    
                   </Col>
                   <Col md="12" sm="12" xl="4"xs="12" py="5" mx="2" >
-                    <img class="fotos" src={eduardo} alt="foto9"/>
+                    <img class="fotos" src={defaultfoto} alt="foto9"/>
                     <CardTitle className="TituloTime mt-3">Glauber Gonçalves</CardTitle>
                     <p className="graduacaoTime my-2 mb-2 text-center ">Dr. em Ciências Geodésicas  </p> 
                     <p className="my-2  resumoTime">Professor do Centro de Ciências Computacionais 
@@ -167,7 +171,8 @@ export default function About(){
                   <img class="fotos" src={willian} alt="foto6"/>
                     <CardTitle className="TituloTime mt-3">Willian Lemos</CardTitle>
                     <p className="graduacaoTime my-2 mb-2 text-center ">Graduando em Eng.Comp. </p>
-                    <p className="my-2 resumoTime">Atua como pesquisador nas áreas de Data Science e Engenharia de dados.
+                    <p className="my-2 resumoTime">Desenvolvedor desde 2015 e entusiasta em Redes Neurais.
+                     Atua como pesquisador nas áreas de Data Science e Engenharia de dados.
                     </p>
                     <div className="mb-5">
                     <Button className="Headerlinks" color="link" href="http://lattes.cnpq.br/5429651614061510">
@@ -202,7 +207,7 @@ export default function About(){
                     </div>                   
                   </Col>
                   <Col md="12" sm="12" xl="4"xs="12" py="5" mx="2">
-                  <img class="fotos" src={eduardo} alt="foto8"/>
+                  <img class="fotos" src={defaultfoto} alt="foto8"/>
                     <CardTitle  className="TituloTime mt-3">Felipe Marques</CardTitle>
                     <p className="graduacaoTime my-2 mb-2 text-center ">Graduando em Eng.Comp. </p>
                     <p className="my-2 resumoTime">Lorem ipsum dolor sit amet, consectetur 
