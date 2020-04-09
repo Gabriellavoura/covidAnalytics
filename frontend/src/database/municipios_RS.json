@@ -416,13 +416,13 @@
     "codigo_ibge": 4302907,
     "name": "Cacequi",
     "lat": -29.8883,
-    "lon": -54822,
+    "lon": -54.822,
     "uf": 43
   },
   {
     "codigo_ibge": 4303004,
     "name": "Cachoeira do Sul",
-    "lat": -30033,
+    "lat": -30.033,
     "lon": -52.8928,
     "uf": 43
   },
@@ -436,7 +436,7 @@
   {
     "codigo_ibge": 4303202,
     "name": "Cacique Doble",
-    "lat": -27767,
+    "lat": -27.767,
     "lon": -51.6597,
     "uf": 43
   },
@@ -464,7 +464,7 @@
   {
     "codigo_ibge": 4303558,
     "name": "Camargo",
-    "lat": -28588,
+    "lat": -28.588,
     "lon": -52.2003,
     "uf": 43
   },
@@ -541,14 +541,14 @@
   {
     "codigo_ibge": 4304408,
     "name": "Canela",
-    "lat": -29356,
+    "lat": -29.356,
     "lon": -50.8119,
     "uf": 43
   },
   {
     "codigo_ibge": 4304507,
     "name": "Canguçu",
-    "lat": -31396,
+    "lat": -31.396,
     "lon": -52.6783,
     "uf": 43
   },
@@ -598,7 +598,7 @@
     "codigo_ibge": 4304689,
     "name": "Capela de Santana",
     "lat": -29.6961,
-    "lon": -51328,
+    "lon": -51.328,
     "uf": 43
   },
   {
@@ -688,7 +688,7 @@
   {
     "codigo_ibge": 4305132,
     "name": "Cerro Branco",
-    "lat": -29657,
+    "lat": -29.657,
     "lon": -52.9406,
     "uf": 43
   },
@@ -731,13 +731,13 @@
     "codigo_ibge": 4305371,
     "name": "Charrua",
     "lat": -27.9493,
-    "lon": -52015,
+    "lon": -52.015,
     "uf": 43
   },
   {
     "codigo_ibge": 4305405,
     "name": "Chiapetta",
-    "lat": -27923,
+    "lat": -27.923,
     "lon": -53.9419,
     "uf": 43
   },
@@ -793,7 +793,7 @@
   {
     "codigo_ibge": 4305801,
     "name": "Constantina",
-    "lat": -27732,
+    "lat": -27.732,
     "lon": -52.9938,
     "uf": 43
   },
@@ -842,7 +842,7 @@
   {
     "codigo_ibge": 4305975,
     "name": "Coxilha",
-    "lat": -28128,
+    "lat": -28.128,
     "lon": -52.3023,
     "uf": 43
   },
@@ -863,14 +863,14 @@
   {
     "codigo_ibge": 4306072,
     "name": "Cristal do Sul",
-    "lat": -27452,
+    "lat": -27.452,
     "lon": -53.2422,
     "uf": 43
   },
   {
     "codigo_ibge": 4306106,
     "name": "Cruz Alta",
-    "lat": -28645,
+    "lat": -28.645,
     "lon": -53.6048,
     "uf": 43
   },
@@ -905,7 +905,7 @@
   {
     "codigo_ibge": 4306353,
     "name": "Dezesseis de Novembro",
-    "lat": -28219,
+    "lat": -28.219,
     "lon": -55.0617,
     "uf": 43
   },
@@ -933,7 +933,7 @@
   {
     "codigo_ibge": 4306452,
     "name": "Dois Lajeados",
-    "lat": -28983,
+    "lat": -28.983,
     "lon": -51.8396,
     "uf": 43
   },
@@ -955,7 +955,7 @@
     "codigo_ibge": 4306551,
     "name": "Dom Pedro de Alcântara",
     "lat": -29.3639,
-    "lon": -49853,
+    "lon": -49.853,
     "uf": 43
   },
   {
@@ -975,7 +975,7 @@
   {
     "codigo_ibge": 4306759,
     "name": "Doutor Ricardo",
-    "lat": -29084,
+    "lat": -29.084,
     "lon": -51.9972,
     "uf": 43
   },
@@ -996,14 +996,14 @@
   {
     "codigo_ibge": 4306908,
     "name": "Encruzilhada do Sul",
-    "lat": -30543,
+    "lat": -30.543,
     "lon": -52.5204,
     "uf": 43
   },
   {
     "codigo_ibge": 4306924,
     "name": "Engenho Velho",
-    "lat": -27706,
+    "lat": -27.706,
     "lon": -52.9145,
     "uf": 43
   },
@@ -1046,7 +1046,7 @@
     "codigo_ibge": 4307203,
     "name": "Erval Grande",
     "lat": -27.3926,
-    "lon": -52574,
+    "lon": -52.574,
     "uf": 43
   },
   {
@@ -1094,7 +1094,7 @@
   {
     "codigo_ibge": 4307708,
     "name": "Esteio",
-    "lat": -29852,
+    "lat": -29.852,
     "lon": -51.1841,
     "uf": 43
   },
@@ -1213,7 +1213,7 @@
   {
     "codigo_ibge": 4308607,
     "name": "Garibaldi",
-    "lat": -29259,
+    "lat": -29.259,
     "lon": -51.5352,
     "uf": 43
   },
@@ -1332,7 +1332,7 @@
   {
     "codigo_ibge": 4307104,
     "name": "Herval",
-    "lat": -32024,
+    "lat": -32.024,
     "lon": -53.3944,
     "uf": 43
   },
@@ -1409,7 +1409,7 @@
   {
     "codigo_ibge": 4310207,
     "name": "Ijuí",
-    "lat": -28388,
+    "lat": -28.388,
     "lon": -53.92,
     "uf": 43
   },
@@ -1550,14 +1550,14 @@
     "codigo_ibge": 4311007,
     "name": "Jaguarão",
     "lat": -32.5604,
-    "lon": -53377,
+    "lon": -53.377,
     "uf": 43
   },
   {
     "codigo_ibge": 4311106,
     "name": "Jaguari",
     "lat": -29.4936,
-    "lon": -54703,
+    "lon": -54.703,
     "uf": 43
   },
   {
@@ -1592,7 +1592,7 @@
     "codigo_ibge": 4311239,
     "name": "Lagoa Bonita do Sul",
     "lat": -29.4939,
-    "lon": -53017,
+    "lon": -53.017,
     "uf": 43
   },
   {
@@ -1640,7 +1640,7 @@
   {
     "codigo_ibge": 4311601,
     "name": "Liberato Salzano",
-    "lat": -27601,
+    "lat": -27.601,
     "lon": -53.0753,
     "uf": 43
   },
@@ -1717,7 +1717,7 @@
   {
     "codigo_ibge": 4311981,
     "name": "Mariana Pimentel",
-    "lat": -30353,
+    "lat": -30.353,
     "lon": -51.5803,
     "uf": 43
   },
@@ -1759,7 +1759,7 @@
   {
     "codigo_ibge": 4312179,
     "name": "Mato Queimado",
-    "lat": -28252,
+    "lat": -28.252,
     "lon": -54.6159,
     "uf": 43
   },
@@ -1780,7 +1780,7 @@
   {
     "codigo_ibge": 4312302,
     "name": "Miraguaí",
-    "lat": -27497,
+    "lat": -27.497,
     "lon": -53.6891,
     "uf": 43
   },
@@ -1850,7 +1850,7 @@
   {
     "codigo_ibge": 4312609,
     "name": "Muçum",
-    "lat": -29163,
+    "lat": -29.163,
     "lon": -51.8714,
     "uf": 43
   },
@@ -1955,7 +1955,7 @@
   {
     "codigo_ibge": 4313102,
     "name": "Nova Palma",
-    "lat": -29471,
+    "lat": -29.471,
     "lon": -53.4689,
     "uf": 43
   },
@@ -2032,7 +2032,7 @@
   {
     "codigo_ibge": 4313466,
     "name": "Novo Xingu",
-    "lat": -27749,
+    "lat": -27.749,
     "lon": -53.0639,
     "uf": 43
   },
@@ -2047,7 +2047,7 @@
     "codigo_ibge": 4313607,
     "name": "Paim Filho",
     "lat": -27.7075,
-    "lon": -51763,
+    "lon": -51.763,
     "uf": 43
   },
   {
@@ -2068,7 +2068,7 @@
     "codigo_ibge": 4313805,
     "name": "Palmitinho",
     "lat": -27.3596,
-    "lon": -53558,
+    "lon": -53.558,
     "uf": 43
   },
   {
@@ -2123,7 +2123,7 @@
   {
     "codigo_ibge": 4314076,
     "name": "Passo do Sobrado",
-    "lat": -29748,
+    "lat": -29.748,
     "lon": -52.2748,
     "uf": 43
   },
@@ -2186,7 +2186,7 @@
   {
     "codigo_ibge": 4314456,
     "name": "Pinhal",
-    "lat": -27508,
+    "lat": -27.508,
     "lon": -53.2082,
     "uf": 43
   },
@@ -2200,7 +2200,7 @@
   {
     "codigo_ibge": 4314472,
     "name": "Pinhal Grande",
-    "lat": -29345,
+    "lat": -29.345,
     "lon": -53.3206,
     "uf": 43
   },
@@ -2208,7 +2208,7 @@
     "codigo_ibge": 4314498,
     "name": "Pinheirinho do Vale",
     "lat": -27.2109,
-    "lon": -53608,
+    "lon": -53.608,
     "uf": 43
   },
   {
@@ -2347,7 +2347,7 @@
   {
     "codigo_ibge": 4315305,
     "name": "Quaraí",
-    "lat": -30384,
+    "lat": -30.384,
     "lon": -56.4483,
     "uf": 43
   },
@@ -2375,7 +2375,7 @@
   {
     "codigo_ibge": 4315404,
     "name": "Redentora",
-    "lat": -27664,
+    "lat": -27.664,
     "lon": -53.6407,
     "uf": 43
   },
@@ -2410,14 +2410,14 @@
   {
     "codigo_ibge": 4315701,
     "name": "Rio Pardo",
-    "lat": -29988,
+    "lat": -29.988,
     "lon": -52.3711,
     "uf": 43
   },
   {
     "codigo_ibge": 4315750,
     "name": "Riozinho",
-    "lat": -29639,
+    "lat": -29.639,
     "lon": -50.4488,
     "uf": 43
   },
@@ -2488,7 +2488,7 @@
     "codigo_ibge": 4316436,
     "name": "Saldanha Marinho",
     "lat": -28.3941,
-    "lon": -53097,
+    "lon": -53.097,
     "uf": 43
   },
   {
@@ -2515,7 +2515,7 @@
   {
     "codigo_ibge": 4316600,
     "name": "Sananduva",
-    "lat": -27947,
+    "lat": -27.947,
     "lon": -51.8079,
     "uf": 43
   },
@@ -2530,7 +2530,7 @@
     "codigo_ibge": 4316709,
     "name": "Santa Bárbara do Sul",
     "lat": -28.3653,
-    "lon": -53251,
+    "lon": -53.251,
     "uf": 43
   },
   {
@@ -2550,7 +2550,7 @@
   {
     "codigo_ibge": 4316808,
     "name": "Santa Cruz do Sul",
-    "lat": -29722,
+    "lat": -29.722,
     "lon": -52.4343,
     "uf": 43
   },
@@ -2592,7 +2592,7 @@
   {
     "codigo_ibge": 4317301,
     "name": "Santa Vitória do Palmar",
-    "lat": -33525,
+    "lat": -33.525,
     "lon": -53.3717,
     "uf": 43
   },
@@ -2627,7 +2627,7 @@
   {
     "codigo_ibge": 4317707,
     "name": "Santo Antônio das Missões",
-    "lat": -28514,
+    "lat": -28.514,
     "lon": -55.2251,
     "uf": 43
   },
@@ -2641,7 +2641,7 @@
   {
     "codigo_ibge": 4317756,
     "name": "Santo Antônio do Planalto",
-    "lat": -28403,
+    "lat": -28.403,
     "lon": -52.6992,
     "uf": 43
   },
@@ -2656,7 +2656,7 @@
     "codigo_ibge": 4317905,
     "name": "Santo Cristo",
     "lat": -27.8263,
-    "lon": -54662,
+    "lon": -54.662,
     "uf": 43
   },
   {
@@ -2677,7 +2677,7 @@
     "codigo_ibge": 4318051,
     "name": "São Domingos do Sul",
     "lat": -28.5312,
-    "lon": -51886,
+    "lon": -51.886,
     "uf": 43
   },
   {
@@ -2739,15 +2739,15 @@
   {
     "codigo_ibge": 4318465,
     "name": "São José do Herval",
-    "lat": -29052,
-    "lon": -52295,
+    "lat": -29.052,
+    "lon": -52.295,
     "uf": 43
   },
   {
     "codigo_ibge": 4318481,
     "name": "São José do Hortêncio",
-    "lat": -29528,
-    "lon": -51245,
+    "lat": -29.528,
+    "lon": -51.245,
     "uf": 43
   },
   {
@@ -2802,7 +2802,7 @@
   {
     "codigo_ibge": 4318903,
     "name": "São Luiz Gonzaga",
-    "lat": -28412,
+    "lat": -28.412,
     "lon": -54.9559,
     "uf": 43
   },
@@ -2824,13 +2824,13 @@
     "codigo_ibge": 4319125,
     "name": "São Martinho da Serra",
     "lat": -29.5397,
-    "lon": -53859,
+    "lon": -53.859,
     "uf": 43
   },
   {
     "codigo_ibge": 4319158,
     "name": "São Miguel das Missões",
-    "lat": -28556,
+    "lat": -28.556,
     "lon": -54.5559,
     "uf": 43
   },
@@ -2936,13 +2936,13 @@
     "codigo_ibge": 4320008,
     "name": "Sapucaia do Sul",
     "lat": -29.8276,
-    "lon": -51145,
+    "lon": -51.145,
     "uf": 43
   },
   {
     "codigo_ibge": 4320107,
     "name": "Sarandi",
-    "lat": -27942,
+    "lat": -27.942,
     "lon": -52.9231,
     "uf": 43
   },
@@ -2977,7 +2977,7 @@
   {
     "codigo_ibge": 4320321,
     "name": "Senador Salgado Filho",
-    "lat": -28025,
+    "lat": -28.025,
     "lon": -54.5507,
     "uf": 43
   },
@@ -3034,7 +3034,7 @@
     "codigo_ibge": 4320651,
     "name": "Silveira Martins",
     "lat": -29.6467,
-    "lon": -53591,
+    "lon": -53.591,
     "uf": 43
   },
   {
@@ -3061,7 +3061,7 @@
   {
     "codigo_ibge": 4320859,
     "name": "Tabaí",
-    "lat": -29643,
+    "lat": -29.643,
     "lon": -51.6823,
     "uf": 43
   },
@@ -3111,7 +3111,7 @@
     "codigo_ibge": 4321352,
     "name": "Tavares",
     "lat": -31.2843,
-    "lon": -51088,
+    "lon": -51.088,
     "uf": 43
   },
   {
@@ -3293,7 +3293,7 @@
     "codigo_ibge": 4322343,
     "name": "Ubiretama",
     "lat": -28.0404,
-    "lon": -54686,
+    "lon": -54.686,
     "uf": 43
   },
   {
