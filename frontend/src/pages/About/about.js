@@ -148,12 +148,11 @@ export default function About(){
                   <img class="fotos" src={lucas} alt="foto5"/>
                     <CardTitle className="TituloTime mt-3">Lucas Ribeiro</CardTitle>
                     <p className="graduacaoTime my-2 mb-2 text-center ">Graduando em Eng.Comp. </p>
-                    <p className="my-2 resumoTime">Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit. Integer dapibus purus id enim imperdiet, sed finibus nunc 
-                    accumsan. 
+                    <p className="my-2 resumoTime">Atua como pesquisador nas áreas de Data Science
+                     e Blockchain. Entusiasta em Desenvolvimento Web.
                     </p>
                     <div className="mb-5">
-                    <Button className="Headerlinks" color="link" href="http://lattes.cnpq.br/5851601274050374">
+                    <Button className="Headerlinks" color="link" href="http://lattes.cnpq.br/1491700382158430">
                       <FontAwesomeIcon icon={faGlobeAmericas} />
                     </Button>
                     <Button className="Headerlinks" color="link" href="https://www.linkedin.com/in/luucasrb/">
@@ -168,9 +167,7 @@ export default function About(){
                   <img class="fotos" src={willian} alt="foto6"/>
                     <CardTitle className="TituloTime mt-3">Willian Lemos</CardTitle>
                     <p className="graduacaoTime my-2 mb-2 text-center ">Graduando em Eng.Comp. </p>
-                    <p className="my-2 resumoTime">Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit. Integer dapibus purus id enim imperdiet, sed finibus nunc 
-                    accumsan. 
+                    <p className="my-2 resumoTime">Atua como pesquisador nas áreas de Data Science e Engenharia de dados.
                     </p>
                     <div className="mb-5">
                     <Button className="Headerlinks" color="link" href="http://lattes.cnpq.br/5429651614061510">
