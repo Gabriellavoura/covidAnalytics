@@ -11,14 +11,9 @@ import redFilledMarker from '../../assets/icon.png';
 import axios from 'axios';
 
 
-
-
 var json = require('../../database/municipios_RS.json');
-//var obj = {};
-var obj_confirmed ={};
-//var array_obj = [];
 var array_obj_confirmed = [];
-var hash = {};
+
 
 const myIcon = L.icon({
   iconUrl: redFilledMarker ,
@@ -39,7 +34,10 @@ class Maps extends React.Component{
     var i = 0;
     var j = 0;
     var k = 0;
-    
+    var obj_confirmed = {};
+    var array_obj_confirmed2 = [];
+    var hash = {};
+
     axios.get('https://brasil.io/api/dataset/covid19/caso/data?date=&state=RS&city=&place_type=city&is_last=True&city_ibge_code=&order_for_place=')
     .then( res => {
         const dadosBrutos = res.data;
@@ -76,12 +74,15 @@ class Maps extends React.Component{
                              data: hash[json[i].codigo_ibge].data,
                              codigo_ibge: json[i].codigo_ibge }
 
-            array_obj_confirmed.push(obj_confirmed)
+            array_obj_confirmed2.push(obj_confirmed)
 
-            console.log(obj_confirmed)    
+            array_obj_confirmed = [].concat(array_obj_confirmed2)
+
           }       
       }
         this.setState({ dadosBrutos }); 
+        console.log(array_obj_confirmed)    
+
     })
 
     // console.log(hash)
