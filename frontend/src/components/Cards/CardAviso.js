@@ -11,7 +11,7 @@ class CardAviso extends React.Component{
       <div className="CardContainer" >
     <UncontrolledAlert color="light" className="AvisoCard">
       Os dados utilizados nesta plataforma são fornecidos pelos boletins epidemiológicos
-      divulgados pelos Ministérios da Saúde Estaduais, disponíveis no site <a href="https://brasil.io/home" className="alert-link">Brasil.io</a>. Esses dados são atualizados
+      divulgados pelas Secretarias de Saúde Estaduais, disponíveis no site <a href="https://brasil.io/home" className="alert-link">Brasil.io</a>. Esses dados são atualizados
        diariamente quando os boletins são divulgados às  23:00 no horário de Brasília.
     </UncontrolledAlert>
       </div>

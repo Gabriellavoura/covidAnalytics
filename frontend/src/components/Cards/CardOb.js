@@ -19,7 +19,7 @@ class CardOb extends React.Component{
     .then(res => {
       this.setState({results: res.data.results});     
       document.getElementById("deaths").innerHTML = this.state.results[0].deaths;
-      document.getElementById("deaths_atualiza").innerHTML = "Ultima atualização em: "+ formatDate(this.state.results[0].date); 
+      document.getElementById("deaths_atualiza").innerHTML = "Última atualização em: "+ formatDate(this.state.results[0].date); 
  
     });
   }
