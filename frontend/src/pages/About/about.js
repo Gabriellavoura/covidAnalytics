@@ -115,9 +115,9 @@ export default function About(){
                   <img class="fotos" src={vanessa} alt="foto3"/>
                     <CardTitle className="TituloTime mt-3">Vanessa Telles</CardTitle>
                     <p className="graduacaoTime my-2 mb-2 text-center ">Mestranda em Eng.Comp. </p>
-                    <p className="my-2 resumoTime">Entusiasta em 
-                    Design Digital, empreendedora e desenvolvedora desde 2014, atuando nas áreas de Data Science,
-                     Web e Mobile.
+                    <p className="my-2 resumoTime">Entusiasta em Design Digital, empreendedora e
+                    desenvolvedora Web e Mobile desde 2014. Atua como
+                    pesquisadora nas áreas de Data Science e Deep Learning .
                     </p>
                     <div className="mb-5">
                     <Button className="Headerlinks" color="link" href="http://lattes.cnpq.br/3565116360523950">
@@ -136,7 +136,8 @@ export default function About(){
                   <img class="fotos" src={bruna} alt="foto4"/>
                     <CardTitle className="TituloTime mt-3">Bruna Guterres</CardTitle>
                     <p className="graduacaoTime my-2 mb-2 text-center ">Mestranda em Eng.Comp. </p>
-                    <p className="my-2 resumoTime">Professora substituta do Centro de Ciências Computacionais - C3. Entusiasta em Visão Computacional e Aprendizado de Máquina. Membro do grupo NAUTEC desde 2015
+                    <p className="my-2 resumoTime">Professora substituta do Centro de Ciências Computacionais - C3.
+                     Entusiasta em Visão Computacional e Aprendizado de Máquina. Membro do grupo NAUTEC desde 2015.
                     </p>
                     <div className="mb-5">
                     <Button className="Headerlinks" color="link" href="http://lattes.cnpq.br/2197909913930437">
@@ -192,9 +193,8 @@ export default function About(){
                   <img class="fotos" src={augusto} alt="foto7"/>
                     <CardTitle  className="TituloTime mt-3">Augusto Lamim</CardTitle>
                     <p className="graduacaoTime my-2 mb-2 text-center ">Graduando em Eng.Comp. </p>
-                    <p className="my-2 resumoTime">Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit. Integer dapibus purus id enim imperdiet, sed finibus nunc 
-                    accumsan. 
+                    <p className="my-2 resumoTime">Desenvolvedor full-stack, entusiasta em Tecnologia da
+                    Informação.
                     </p>
                     <div className="mb-5">
                     <Button className="Headerlinks" color="link" href="http://lattes.cnpq.br/1925430387887371">
@@ -212,14 +212,13 @@ export default function About(){
                   <img class="fotos" src={felipe} alt="foto8"/>
                     <CardTitle  className="TituloTime mt-3">Felipe Marques</CardTitle>
                     <p className="graduacaoTime my-2 mb-2 text-center ">Graduando em Eng.Comp. </p>
-                    <p className="my-2 resumoTime">Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit. Integer dapibus purus id enim imperdiet, sed finibus nunc 
-                    accumsan. 
+                    <p className="my-2 resumoTime">Técnico em Informática para Internet pelo IFRS, desenvolvedor
+                     desde 2016.  
                     </p>
                     <div className="mb-5">
-                    <Button className="Headerlinks" color="link" href="#">
+                    {/* <Button className="Headerlinks" color="link" href="#">
                       <FontAwesomeIcon icon={faGlobeAmericas} />
-                    </Button>
+                    </Button> */}
                     <Button className="Headerlinks" color="link" href="https://www.linkedin.com/in/felipesouzamarques/">
                       <FontAwesomeIcon icon={faLinkedin} />
                     </Button> 
