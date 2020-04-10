@@ -8,7 +8,7 @@ import MarkerClusterGroup from "react-leaflet-markercluster";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faVirus, faUser, faCalendar}  from "@fortawesome/free-solid-svg-icons";
 import redFilledMarker from '../../assets/icon.png';
-import pinMarker from '../../assets/pin.png';
+import pinMarker from '../../assets/virus.png';
 import axios from 'axios';
 
 L.NumberedDivIcon = L.Icon.extend({
