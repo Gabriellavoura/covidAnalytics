@@ -6,15 +6,12 @@ import About from './pages/About/about';
 
 export default function Routes(){
   return(
-
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Switch>
         <Route path="/" exact component={Home}></Route>
         <Route path="/about" component={About}></Route>
       </Switch>
     </BrowserRouter>
-
-
   );
 
 }

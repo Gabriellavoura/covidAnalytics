@@ -111,10 +111,10 @@ class Maps extends React.Component{
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
 
-            {/* <MarkerClusterGroup> */}
+            <MarkerClusterGroup>
                   {array_obj_confirmed.map(({lat, lng, nome, confirmed,pop_estimada}, index) => (
                       
-                        <Marker position={[lat, lng]} key={index} icon={myIcon} attribution="confirmed">
+                        <Marker position={[lat, lng]} key={index} attribution="confirmed">
                             <Popup minWidth={250}>
                               <div className="popUp-container">
                                 <div className="popUp-title">{nome}</div>
@@ -131,8 +131,10 @@ class Maps extends React.Component{
                                |
                             </Popup>
                         </Marker>
+
                       
-                      ))}   
+                      ))}  
+                      </MarkerClusterGroup> 
               </Map>
           </Card> 
         </div>
