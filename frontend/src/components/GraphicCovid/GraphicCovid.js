@@ -50,7 +50,11 @@ class GraphicCovid extends React.Component{
               }
             ]
       },
-      options: { }
+      options: {
+        legend: {
+          onClick: (e) => e.stopPropagation()
+        }
+       }
       });
     });
 

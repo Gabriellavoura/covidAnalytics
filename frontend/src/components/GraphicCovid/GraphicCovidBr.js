@@ -5,7 +5,6 @@ import './styles.css';
 import { Card, CardBody, CardTitle } from 'reactstrap';
 import Chart from "chart.js";
 import axios from 'axios';
-var confirmed_hash = {};
 var uf_hash = {};
 
 function formatDate (input) {
@@ -32,15 +31,18 @@ class GraphicCovidBr extends React.Component{
   chartRef = React.createRef();
 
   componentDidMount() {
+    var confirmed_hash = {};
     var i = 0;
     var j = 0;
     var k = 0;
     var dates = [];
-    // const myLineChart = this.chartRef.current.getContext("2d");
+    const myLineChart = this.chartRef.current.getContext("2d");
     
     axios.get("https://brasil.io/api/dataset/covid19/caso/data?place_type=state")
     .then(res => {
       this.setState({results: res.data.results});
+
+      console.log(confirmed_hash)
 
       var estados = ["AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RO", "RS", "RR", "SC", "SE", "SP", "TO"]
 
@@ -58,6 +60,7 @@ class GraphicCovidBr extends React.Component{
 
         }
       }
+
 
       var current_date = toDate(dates.sort().reverse()[0])
       
@@ -121,7 +124,11 @@ class GraphicCovidBr extends React.Component{
               }
             ]
       },
-      options: { }
+      options: {
+        legend: {
+          onClick: (e) => e.stopPropagation()
+        }
+      }
       });
     });
 

@@ -5,9 +5,6 @@ import { Card, CardBody, CardTitle, Table } from 'reactstrap';
 import axios from 'axios';
 import {dynamic_sort} from './TableCovid';
 
-
-var top10 = [];
-
 class TableCovidRS extends React.Component{
   state = {
     results: []
@@ -17,6 +14,8 @@ class TableCovidRS extends React.Component{
     axios.get("https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=RS")
     .then(res => {
       var i = 0;
+      var top10 = [];
+
 
       for (i = 0; i < res.data.results.length; i++) {
         top10.push(res.data.results[i])
@@ -45,7 +44,7 @@ class TableCovidRS extends React.Component{
           <CardBody>
 
             <CardTitle tag="h4" className=" mb-2 mb-xl-2 font-weight-bold">
-              Cidades com maior número de casos confirmados
+              Cidades com maior número de casos confirmados no RS
             </CardTitle> 
 
           </CardBody> 
