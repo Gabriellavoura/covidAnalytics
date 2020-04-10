@@ -13,8 +13,6 @@ export default function Routes(){
         <Route path="/about" component={About}></Route>
       </Switch>
     </BrowserRouter>
-
-
   );
 
 }

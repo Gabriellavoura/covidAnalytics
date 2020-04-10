@@ -1,7 +1,5 @@
 import React from 'react';
 import './Cardstyles.css';
-import axios from 'axios';
-import { Card, CardBody, CardTitle } from 'reactstrap';
 import { UncontrolledAlert } from 'reactstrap';
 
 

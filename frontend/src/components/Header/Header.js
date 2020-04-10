@@ -14,12 +14,9 @@ const Header = (props)=>{
   
     return (
       <div className="ContainerNav">
-
-        <Navbar light expand="md" >
-
+        <Navbar light expand="md" className="md-5 portalImg">
           <Collapse navbar>
-
-            <Nav  className="mr-auto" navbar> 
+            <Nav navbar> 
             <NavItem>
                 <NavLink href="https://www.furg.br/">
                   <img class="furg" src={logoFurg} alt="Logo Furg"/>
@@ -30,48 +27,40 @@ const Header = (props)=>{
                 <img class="c3" src={logoC3} alt="Logo C3"/>
               </NavLink>   
             </NavItem>  
-            
             </Nav>
-
-            <Nav  className="mr-auto" navbar> 
-
-            </Nav>
-
           </Collapse>
             
-          <NavbarBrand className=" mr-auto logo-title">
+          <NavbarBrand className=" mx-auto logo-title">
             <Link to="/" className="Headerlinks"><FontAwesomeIcon  icon={faVirus} />             
             ITeCCorona  
             </Link> 
           </NavbarBrand>
-          <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={isOpen}  navbar>          
-            <Nav className="mr-auto" navbar>
-            </Nav>
-            <DropdownToggle color>
-            <Nav>
-                <NavItem>
+
+          <NavbarToggler onClick={toggle} className="mr-2"/>
+            <Collapse isOpen={isOpen} navbar>    
+
+              <Nav className="navPortal ml-auto"> 
+                <NavItem className="portal">
                     <NavLink className="LinkTitle" href="http://www.riogrande.rs.gov.br/corona/">
-                        <p>Portal</p>
+                        Portal
                     </NavLink>
                 </NavItem>
                 
-                <NavItem>
-                  <NavLink className="LinkTitle"  >
-                    <Link to="/about" className="LinkTitle " >Sobre nós                            
+                <NavItem className="portal">
+                  <NavLink className="LinkTitle" >
+                    <Link to="/about" className="LinkTitle " >
+                      Sobre nós                            
                     </Link>
                   </NavLink>
                 </NavItem>
 
-                <NavItem>
+                <NavItem className="portal">
                   <NavLink className="LinkTitle"  href="https://github.com/Gabriellavoura/coronaDash">
-                    <p>Github</p>
+                    Github
                   </NavLink>
                 </NavItem>
             </Nav>
-            </DropdownToggle>
           </Collapse>
-
         </Navbar>
 
       </div>

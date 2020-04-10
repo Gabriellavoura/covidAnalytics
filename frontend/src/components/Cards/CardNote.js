@@ -35,9 +35,7 @@ class CardNote extends React.Component{
 
             <span id="date" className="NoteCardAtt">
                
-            </span>
-            
-                                      
+            </span>                              
           </CardBody>
         </Card>
       </div>

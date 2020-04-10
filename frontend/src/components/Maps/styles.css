@@ -10,12 +10,21 @@
   border-radius: 2px !important;
 }
 
-Marker{
-  font-size: large;
+.leaflet-div-icon {
+	background: transparent;
+  border: none;
 }
-PopUp{
-  width: 300px;
+
+.leaflet-marker-icon .number{
+	position: relative;
+	top: -29px;
+	font-size: 1.5em;
+	width: 31px;
+  text-align: center;
+  font-weight: 700;
+  color: #333333;
 }
+
 .popUp-container{
   margin: 0;
   padding: 0;
