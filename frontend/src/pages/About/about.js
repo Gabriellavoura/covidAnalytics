@@ -229,7 +229,24 @@ export default function About(){
                   </Col>                        
                 </Row>
               </Container>
-            </div> 
+            </div>
+            <div>
+              <Container>
+                <Row>
+                  <Col md="12" sm="12" xl="12"xs="12" py="5" mx="2">
+                  <CardTitle className="titulosAbout">
+                  Attribution            
+                  <hr className="my-2 mb-5" />
+                </CardTitle>    
+                <p className="my-2 mb-2 aboutexto">Icons made
+                 by <a class="LinkTitle" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a className="LinkTitle" href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>  </p>
+                 <p className="my-2 mb-2 aboutexto">Icons fonts made 
+                 by <a class="LinkTitle" href="https://fontawesome.com/license/free" title="FontAwesome">FontAwesome</a> from <a className="LinkTitle" href="https://fontawesome.com/" title="Flaticon"> www.fontawesome.com/</a>  </p>
+                
+               </Col>
+                </Row>
+              </Container>
+              </div> 
 
             </CardBody> 
             </Card>
