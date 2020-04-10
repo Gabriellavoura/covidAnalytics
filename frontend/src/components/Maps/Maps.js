@@ -1,13 +1,12 @@
 import React from 'react'
 import './styles.css';
 
-import { Map, TileLayer, Marker, Popup,icon } from 'react-leaflet';
+import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Card, CardBody, CardTitle } from 'reactstrap';
 import L from 'leaflet';
 import MarkerClusterGroup from "react-leaflet-markercluster";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faVirus, faUser, faCalendar}  from "@fortawesome/free-solid-svg-icons";
-import redFilledMarker from '../../assets/icon.png';
 import pinMarker from '../../assets/virus.png';
 import axios from 'axios';
 
@@ -108,7 +107,7 @@ class Maps extends React.Component{
           }       
       }
         this.setState({ dadosBrutos }); 
-        console.log(array_obj_confirmed)    
+        // console.log(array_obj_confirmed)    
     })
     // console.log(hash)
 

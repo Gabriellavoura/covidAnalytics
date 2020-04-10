@@ -17,7 +17,7 @@ class CardLet extends React.Component{
     .then(res => {
       this.setState({results: res.data.results});    
       let num = parseFloat((100)*(this.state.results[0].death_rate.toFixed(4))) ;
-      document.getElementById("death_rate").innerHTML = num.toPrecision(2) +"%";
+      document.getElementById("death_rate").innerHTML = num.toPrecision(3) +"%";
       document.getElementById("death_rate_atualiza").innerHTML = "Ultima atualização em: "+ formatDate(this.state.results[0].date); 
 
     });
