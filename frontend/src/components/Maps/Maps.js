@@ -10,6 +10,9 @@ import {faVirus, faArrowAltCircleDown, faPeace, faPeopleArrows, faUser, faCalend
 import redFilledMarker from '../../assets/icon.png';
 import axios from 'axios';
 
+
+
+
 var json = require('../../database/municipios_RS.json');
 var obj = {};
 var obj_confirmed ={};
