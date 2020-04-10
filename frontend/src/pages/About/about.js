@@ -239,9 +239,13 @@ export default function About(){
                   <hr className="my-2 mb-5" />
                 </CardTitle>    
                 <p className="my-2 mb-2 aboutexto">Icons made
-                 by <a class="LinkTitle" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a className="LinkTitle" href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>  </p>
+                 by <a class="LinkTitle" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a className="LinkTitle" href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>.  </p>
                  <p className="my-2 mb-2 aboutexto">Icons fonts made 
-                 by <a class="LinkTitle" href="https://fontawesome.com/license/free" title="FontAwesome">FontAwesome</a> from <a className="LinkTitle" href="https://fontawesome.com/" title="Flaticon"> www.fontawesome.com/</a>  </p>
+                 by <a class="LinkTitle" href="https://fontawesome.com/license/free" title="FontAwesome">FontAwesome</a> from <a className="LinkTitle" href="https://fontawesome.com/" title="Flaticon"> www.fontawesome.com/</a>.  </p>
+                 <p className="my-2 mb-2 aboutexto">Graphs by 
+                 by <a class="LinkTitle" href="https://github.com/PaulLeCam/react-leaflet/blob/master/LICENSE" title="FontAwesome">React-leaflet</a> from <a className="LinkTitle" href="https://github.com/PaulLeCam/react-leaflet" title="Flaticon"> https://github.com/PaulLeCam/react-leaflet</a>.  </p>
+                 <p className="my-2 mb-2 aboutexto">Maps clusters 
+                 by <a class="LinkTitle" href="https://github.com/yuzhva/react-leaflet-markercluster/blob/master/LICENSE" title="FontAwesome">React-leaflet-markercluster</a> from <a className="LinkTitle" href="https://github.com/yuzhva/react-leaflet-markercluster" title="Flaticon"> https://github.com/yuzhva/react-leaflet-markercluster</a>.  </p>
                 
                </Col>
                 </Row>
