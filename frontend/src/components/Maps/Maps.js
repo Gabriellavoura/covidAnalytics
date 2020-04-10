@@ -8,7 +8,43 @@ import MarkerClusterGroup from "react-leaflet-markercluster";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faVirus, faUser, faCalendar}  from "@fortawesome/free-solid-svg-icons";
 import redFilledMarker from '../../assets/icon.png';
+import pinMarker from '../../assets/pin.png';
 import axios from 'axios';
+
+L.NumberedDivIcon = L.Icon.extend({
+	options: {
+    iconUrl: pinMarker,
+    number: '',
+    shadowUrl: null,
+    iconSize: new L.Point(25, 41),
+		iconAnchor: new L.Point(13, 41),
+		popupAnchor: new L.Point(0, -33),
+		/*
+		iconAnchor: (Point)
+		popupAnchor: (Point)
+		*/
+    className: 'leaflet-div-icon'
+    
+    
+  },
+  
+	createIcon: function () {
+		var div = document.createElement('div');
+		var img = this._createImg(this.options['iconUrl']);
+		var numdiv = document.createElement('div');
+		numdiv.setAttribute ( "class", "number" );
+		numdiv.innerHTML = this.options['number'] || '';
+		div.appendChild ( img );
+		div.appendChild ( numdiv );
+		this._setIconStyles(div, 'icon');
+		return div;
+	},
+
+	//you could change this to add a shadow like in the normal marker if you really wanted
+	createShadow: function () {
+		return null;
+	}
+});
 
 
 var json = require('../../database/municipios_RS.json');
@@ -115,7 +151,7 @@ class Maps extends React.Component{
             <MarkerClusterGroup>
                   {array_obj_confirmed.map(({lat, lng, nome, confirmed, pop_estimada, data}, index) => (
                       
-                        <Marker position={[lat, lng]} key={index} attribution="confirmed">
+                        <Marker position={[lat, lng]} key={index} icon=	{new L.NumberedDivIcon({number: confirmed})} attribution="confirmed">
                             <Popup minWidth={250}>
                               <div className="popUp-container">
                                 <div className="popUp-title">{nome}</div>
