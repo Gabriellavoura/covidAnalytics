@@ -8,7 +8,7 @@ import MarkerClusterGroup from "react-leaflet-markercluster";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faVirus, faUser, faCalendar}  from "@fortawesome/free-solid-svg-icons";
 import redFilledMarker from '../../assets/icon.png';
-import pinMarker from '../../assets/pin.png';
+import pinMarker from '../../assets/virus.png';
 import axios from 'axios';
 
 L.NumberedDivIcon = L.Icon.extend({
@@ -18,7 +18,7 @@ L.NumberedDivIcon = L.Icon.extend({
     shadowUrl: null,
     iconSize: new L.Point(50, 50),
 		iconAnchor: new L.Point(25, 25),
-    popupAnchor: new L.Point(-25, 20),
+    popupAnchor: new L.Point(-8, -20),
     customWeight: 0,
 		/*
 		iconAnchor: (Point)
@@ -49,18 +49,11 @@ var json = require('../../database/municipios_RS.json');
 var array_obj_confirmed = [];
 
 
-const myIcon = L.icon({
-  iconUrl: redFilledMarker ,
-  iconSize: [40, 40],
-  iconAnchor: [20, 40],
-});
-
 const center = [-32.0332, -52.0986]
 //var cidade = {};
 
 class Maps extends React.Component{
   state={
-    geodata: [],
     dadosBrutos:[]
   }
   
@@ -124,6 +117,7 @@ class Maps extends React.Component{
   
   render() {
 
+
     return (
 
         <div className="cardContainer">
@@ -136,7 +130,7 @@ class Maps extends React.Component{
 
               </CardBody>
 
-             <Map center={center} zoom={10}>
+             <Map center={center} zoom={7} minZoom={6} maxZoom={9}>
 
                 <TileLayer
                   attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -145,7 +139,6 @@ class Maps extends React.Component{
 
             <MarkerClusterGroup>
                   {array_obj_confirmed.map(({lat, lng, nome, confirmed, pop_estimada, data}, index) => (
-                      for( let i in confirmed)
                         <Marker position={[lat, lng]} key={index} icon={new L.NumberedDivIcon({number: confirmed})} attribution="confirmed" >
                             <Popup minWidth={250}>
                               <div className="popUp-container">

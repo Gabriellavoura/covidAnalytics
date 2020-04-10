@@ -43,7 +43,7 @@ class TableCovidRS extends React.Component{
 
           <CardBody>
 
-            <CardTitle tag="h4" className=" mb-2 mb-xl-2 font-weight-bold">
+            <CardTitle tag="h4" className="TabTitle mb-2 mb-xl-2 font-weight-bold">
               Cidades com maior número de casos confirmados no RS
             </CardTitle> 
 

@@ -12,17 +12,17 @@
 
 .leaflet-div-icon {
 	background: transparent;
-	border: none;
+  border: none;
 }
 
 .leaflet-marker-icon .number{
-  position: relative;
-  top: -49px;
-  font-size: 12px;
-  width: 41px;
+	position: relative;
+	top: -29px;
+	font-size: 1.5em;
+	width: 31px;
   text-align: center;
-  color: #fff;
-  font-size: 2em;
+  font-weight: 700;
+  color: #333333;
 }
 
 .popUp-container{
