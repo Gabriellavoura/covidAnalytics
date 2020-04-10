@@ -12,7 +12,7 @@ function formatDate (input) {
 }
 
 class CardOb extends React.Component{
-
+  
 
   componentDidMount(){
     axios.get("https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=RS&place_type=state")

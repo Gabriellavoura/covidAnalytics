@@ -1,7 +1,6 @@
 import React from 'react';
 import './styles.css';
 
-
 import { Card, CardBody, CardTitle, Table } from 'reactstrap';
 import axios from 'axios';
 import {dynamic_sort} from './TableCovid';

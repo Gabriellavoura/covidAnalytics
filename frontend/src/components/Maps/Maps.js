@@ -58,8 +58,6 @@ class Maps extends React.Component{
         for (i = 0; i < json.length; i++) {
              obj = {nome: json[i].name, lat: json[i].lat, lng: json[i].lon, confirmed: hash[json[i].codigo_ibge], codigo_ibge: json[i].codigo_ibge}
              array_obj.push(obj)
-             
-     
          }
 
         // Imprime o numero de cidades com casos confirmados.
