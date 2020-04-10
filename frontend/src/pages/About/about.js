@@ -36,7 +36,7 @@ export default function About(){
                   <hr className="my-2 mb-5" />
                 </CardTitle>    
                 <p className="my-2 mb-2 aboutexto"> O Grupo de Trabalho C3-Analytics é formado por uma pequena equipe de professores e alunos de 
-                graduação e pós-graduação do Centro de Ciências Computacionais - C3. É parte da frente de ItecCorona, que desenvolve atividades 
+                graduação e pós-graduação do Centro de Ciências Computacionais - C3. É parte da frente de ITeCCorona, que desenvolve atividades 
                 de pesquisa, extensão e inovação na Universidade Federal do Rio Grande - FURG sobre COVID-19. </p>
                 <p className="my-2 mb-2 aboutexto">O principal objetivo do GT C3-Analytics é permitir a visualização e a análise de dados da 
                 COVID-19 nas regiões de abrangência da FURG. A equipe responsável pelo desenvolvimento desta plataforma de coleta e visualização
