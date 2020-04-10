@@ -16,7 +16,7 @@ class CardNote extends React.Component{
     axios.get("https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=RS&place_type=state")
     .then(res => {
       this.setState({results: res.data.results});     
-      document.getElementById("date").innerHTML = "Ultima atualização em: "+ formatDate(this.state.results[0].date); 
+      document.getElementById("date").innerHTML = "Última atualização em: "+ formatDate(this.state.results[0].date); 
     });
   }
 

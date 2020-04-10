@@ -15,7 +15,7 @@ export default class Footer extends React.Component {
                   <div className=" text-center py-3 ">
                                 
                   <p class=" footerfonts mr-md-5 mr-3 fa-2x " >Dashboard desenvolvida pelo time C3 Analytics,
-                   grupo pertencente a frente tecnológica ItecCorona, uma iniciativa da FURG em parceria 
+                   grupo pertencente a frente tecnológica ITeCCorona, uma iniciativa da FURG em parceria 
                    com outras instituições para ajudar no combate e prevenção do Covid-19.                          
                   </p>
 
