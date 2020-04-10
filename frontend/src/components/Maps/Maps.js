@@ -6,9 +6,12 @@ import { Card, CardBody, CardTitle } from 'reactstrap';
 import L from 'leaflet';
 import MarkerClusterGroup from "react-leaflet-markercluster";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faVirus, faArrowAltCircleDown, faPeace, faPeopleArrows, faUser, faCalendar}  from "@fortawesome/free-solid-svg-icons";
+import {faVirus, faUser, faCalendar}  from "@fortawesome/free-solid-svg-icons";
 import redFilledMarker from '../../assets/icon.png';
 import axios from 'axios';
+
+
+
 
 var json = require('../../database/municipios_RS.json');
 var obj = {};
@@ -16,7 +19,6 @@ var obj_confirmed ={};
 var array_obj = [];
 var array_obj_confirmed = [];
 var hash = {};
-var hash1 = {};
 
 const myIcon = L.icon({
   iconUrl: redFilledMarker ,
@@ -77,16 +79,12 @@ class Maps extends React.Component{
             console.log(obj_confirmed)    
           }       
       }
-     
-
         this.setState({ dadosBrutos }); 
-
     })
 
     // console.log(hash)
 
-    console.log(obj)
-
+    // console.log(obj)
     
   }
   
@@ -122,13 +120,10 @@ class Maps extends React.Component{
                                   <ul>
                                     <li><FontAwesomeIcon icon={faVirus}/> Casos confirmados: {confirmed}</li>
                                     <li><FontAwesomeIcon icon={faUser}/> População Estimada 2019: {pop_estimada}</li>
-                                    <li><FontAwesomeIcon icon={faCalendar}/> Data da ultima atualização: {pop_estimada}</li>
-                                    
-                                  </ul>
-                                  
+                                    <li><FontAwesomeIcon icon={faCalendar}/> Data da ultima atualização: {pop_estimada}</li>  
+                                  </ul> 
                                 </div>
                               </div>
-                               |
                             </Popup>
                         </Marker>
 

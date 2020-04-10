@@ -36,7 +36,7 @@ class GraphicCovidBr extends React.Component{
     var j = 0;
     var k = 0;
     var dates = [];
-    const myLineChart = this.chartRef.current.getContext("2d");
+    // const myLineChart = this.chartRef.current.getContext("2d");
     
     axios.get("https://brasil.io/api/dataset/covid19/caso/data?place_type=state")
     .then(res => {

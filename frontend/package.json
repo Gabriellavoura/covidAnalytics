@@ -1,6 +1,7 @@
 {
   "name": "covid-dash",
   "version": "0.1.0",
+  "homepage": "http://www.riogrande.rs.gov.br/covidanalytics",
   "private": true,
   "homepage": ".",
   "dependencies": {

@@ -27,7 +27,7 @@ class TableCovidRS extends React.Component{
       top10.shift();
       top10.length = 10;
 
-      console.log(top10);
+      // console.log(top10);
       
 
       this.setState({results: top10});

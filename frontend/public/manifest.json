@@ -1,6 +1,6 @@
 {
   "short_name": "Covid Analytics",
-  "name": "Plataforma para visualização dos casos de covid-19 em Rio Grande e região",
+  "name": "Covid Analytics",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,7 +8,7 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
+  "start_url": "http://www.riogrande.rs.gov.br/covidanalytics",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

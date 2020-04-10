@@ -6,7 +6,8 @@ import About from './pages/About/about';
 
 export default function Routes(){
   return(
-    <BrowserRouter basename="/">
+
+    <BrowserRouter basename="/covidanalytics">
       <Switch>
         <Route path="/" exact component={Home}></Route>
         <Route path="/about" component={About}></Route>
