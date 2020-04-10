@@ -14,9 +14,9 @@ import axios from 'axios';
 
 
 var json = require('../../database/municipios_RS.json');
-var obj = {};
+//var obj = {};
 var obj_confirmed ={};
-var array_obj = [];
+//var array_obj = [];
 var array_obj_confirmed = [];
 var hash = {};
 
@@ -50,17 +50,17 @@ class Maps extends React.Component{
         }
 
         for (j = 0; j < res.data.results.length; j++) {
-          hash[res.data.results[j].city_ibge_code] = res.data.results[j].confirmed;
+          hash[res.data.results[j].city_ibge_code] = {confirmed: res.data.results[j].confirmed, pop_estimada: res.data.results[j].estimated_population_2019, data: res.data.results[j].date};
     
         }
         
         // Imprime todas cidades
-        for (i = 0; i < json.length; i++) {
-             obj = {nome: json[i].name, lat: json[i].lat, lng: json[i].lon, confirmed: hash[json[i].codigo_ibge], codigo_ibge: json[i].codigo_ibge}
+    /*    for (i = 0; i < json.length; i++) {
+             obj = {nome: json[i].name, lat: json[i].lat, lng: json[i].lon, confirmed: hash[json[i].codigo_ibge], codigo_ibge: json[i].codigo_ibge, pop_estimada: json[i].estimated_population_2019}
              array_obj.push(obj)
              
      
-         }
+         } */
 
         // Imprime o numero de cidades com casos confirmados.
          for (i = 0; i < json.length; i++) {
@@ -71,7 +71,9 @@ class Maps extends React.Component{
             obj_confirmed = {nome: json[i].name, 
                              lat: json[i].lat, 
                              lng: json[i].lon, 
-                             confirmed: hash[json[i].codigo_ibge], 
+                             confirmed: hash[json[i].codigo_ibge].confirmed,
+                             pop_estimada: hash[json[i].codigo_ibge].pop_estimada,
+                             data: hash[json[i].codigo_ibge].data,
                              codigo_ibge: json[i].codigo_ibge }
 
             array_obj_confirmed.push(obj_confirmed)
@@ -110,7 +112,7 @@ class Maps extends React.Component{
                 />
 
             <MarkerClusterGroup>
-                  {array_obj_confirmed.map(({lat, lng, nome, confirmed,pop_estimada}, index) => (
+                  {array_obj_confirmed.map(({lat, lng, nome, confirmed, pop_estimada, data}, index) => (
                       
                         <Marker position={[lat, lng]} key={index} attribution="confirmed">
                             <Popup minWidth={250}>
@@ -120,7 +122,7 @@ class Maps extends React.Component{
                                   <ul>
                                     <li><FontAwesomeIcon icon={faVirus}/> Casos confirmados: {confirmed}</li>
                                     <li><FontAwesomeIcon icon={faUser}/> População Estimada 2019: {pop_estimada}</li>
-                                    <li><FontAwesomeIcon icon={faCalendar}/> Data da ultima atualização: {pop_estimada}</li>  
+                                    <li><FontAwesomeIcon icon={faCalendar}/> Data da ultima atualização: {data}</li>  
                                   </ul> 
                                 </div>
                               </div>
