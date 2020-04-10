@@ -1,4 +1,4 @@
-# Covid19 - Data Visualization
+# Covid Analytics - Data Visualization
 
 > Dashboard para visualização dos dados do estado do Rio Grande do Sul
 
