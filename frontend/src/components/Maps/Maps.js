@@ -16,16 +16,15 @@ L.NumberedDivIcon = L.Icon.extend({
     iconUrl: pinMarker,
     number: '',
     shadowUrl: null,
-    iconSize: new L.Point(25, 41),
-		iconAnchor: new L.Point(13, 41),
-		popupAnchor: new L.Point(0, -33),
+    iconSize: new L.Point(50, 50),
+		iconAnchor: new L.Point(25, 25),
+    popupAnchor: new L.Point(-25, 20),
+    customWeight: 0,
 		/*
 		iconAnchor: (Point)
 		popupAnchor: (Point)
 		*/
-    className: 'leaflet-div-icon'
-    
-    
+    className: 'leaflet-div-icon'    
   },
   
 	createIcon: function () {
@@ -45,7 +44,6 @@ L.NumberedDivIcon = L.Icon.extend({
 		return null;
 	}
 });
-
 
 var json = require('../../database/municipios_RS.json');
 var array_obj_confirmed = [];
@@ -118,13 +116,10 @@ class Maps extends React.Component{
       }
         this.setState({ dadosBrutos }); 
         console.log(array_obj_confirmed)    
-
     })
-
     // console.log(hash)
 
     // console.log(obj)
-    
   }
   
   render() {
@@ -150,8 +145,8 @@ class Maps extends React.Component{
 
             <MarkerClusterGroup>
                   {array_obj_confirmed.map(({lat, lng, nome, confirmed, pop_estimada, data}, index) => (
-                      
-                        <Marker position={[lat, lng]} key={index} icon=	{new L.NumberedDivIcon({number: confirmed})} attribution="confirmed">
+                      for( let i in confirmed)
+                        <Marker position={[lat, lng]} key={index} icon={new L.NumberedDivIcon({number: confirmed})} attribution="confirmed" >
                             <Popup minWidth={250}>
                               <div className="popUp-container">
                                 <div className="popUp-title">{nome}</div>
@@ -165,6 +160,7 @@ class Maps extends React.Component{
                               </div>
                             </Popup>
                         </Marker>
+                      
 
                       
                       ))}  

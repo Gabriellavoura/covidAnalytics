@@ -16,19 +16,15 @@
 }
 
 .leaflet-marker-icon .number{
-	position: relative;
-	top: -37px;
-	font-size: 12px;
-	width: 25px;
-	text-align: center;
+  position: relative;
+  top: -49px;
+  font-size: 12px;
+  width: 41px;
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
 }
 
-Marker{
-  font-size: large;
-}
-PopUp{
-  width: 300px;
-}
 .popUp-container{
   margin: 0;
   padding: 0;
