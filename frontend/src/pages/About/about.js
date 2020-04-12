@@ -42,7 +42,7 @@ export default function About(){
                 COVID-19 nas regiões de abrangência da FURG. A equipe responsável pelo desenvolvimento desta plataforma de coleta e visualização
                  de dados é detalhada abaixo. </p>
                 <p className="my-2 mb-5 aboutexto">Estes e outros integrantes do GT ainda atuam de forma conjunta com a prefeitura municipal de 
-                Rio Grande para implantar  plataforma desenvolvida no portal de serviços relacionados à pandemia do novo Cononavírus e na elaboração
+                Rio Grande para implantar a plataforma desenvolvida no portal de serviços relacionados à pandemia do novo Coronavírus e na elaboração
                  de outras análises a serem publicadas no futuro, principalmente ligadas ao sistema de tele-triagem.</p>
                 <CardTitle className="titulosAbout mb-2">
                   Equipe de Desenvolvedores
@@ -56,8 +56,8 @@ export default function About(){
                     <img class="fotos" src={eduardo} alt="foto1"/>
                     <CardTitle className="TituloTime mt-3">Eduardo Borges</CardTitle>
                     <p className="graduacaoTime my-2 mb-2 text-center ">Dr. em Computação. </p> 
-                    <p className="my-2  resumoTime">Professor do Centro de Ciências Computacionais e 
-                    coordenador do Grupo de Pesquisa em Gerenciamento de Informações
+                    <p className="my-2  resumoTime">Coordenador do GT C3-Analytics. Professor do Centro de Ciências Computacionais e 
+                     do Programa de Pós-Graduação em Computação. Coordenador do Grupo de Pesquisa em Gerenciamento de Informações.
                     </p>
                     <div className="mb-5">
                     <Button className="Headerlinks" color="link" href="http://lattes.cnpq.br/5851601274050374">
@@ -76,8 +76,8 @@ export default function About(){
                     <img class="fotos" src={glauber} alt="foto9"/>
                     <CardTitle className="TituloTime mt-3">Glauber Gonçalves</CardTitle>
                     <p className="graduacaoTime my-2 mb-2 text-center ">Dr. em Ciências Geodésicas  </p> 
-                    <p className="my-2  resumoTime">Professor do Centro de Ciências Computacionais e
-                    coordenador do Laboratório de Tecnologia da Geoinformação
+                    <p className="my-2  resumoTime">Professor do Centro de Ciências Computacionais, 
+                    coordenador do Laboratório de Tecnologia da Geoinformação. Atua como pesquisador em Sensoriamento Remoto e Fotogrametria
                     </p>
                     <div className="mb-5">
                     <Button className="Headerlinks" color="link" href="http://lattes.cnpq.br/2814370196736373">
@@ -97,7 +97,8 @@ export default function About(){
                     <CardTitle className="TituloTime mt-3">Gabriel Lavoura</CardTitle>
                     <p className="graduacaoTime my-2 mb-2 text-center ">Mestrando em Eng.Comp. </p>
                     <p className="my-2 resumoTime">Empreendedor, trabalha com desenvolvimento há mais de 7 anos,
-                     sendo entusiasta em hardware, desenvolvimento Web e Mobile.
+                     sendo entusiasta em hardware, desenvolvimento Web e Mobile. Atua como pesquisador nas áreas de 
+                     Deep Learning e Data Science.  
                     </p>
                     <div className="mb-5">
                     <Button className="Headerlinks" color="link" href="http://lattes.cnpq.br/5616548040095346">
@@ -229,7 +230,28 @@ export default function About(){
                   </Col>                        
                 </Row>
               </Container>
-            </div> 
+            </div>
+            <div>
+              <Container>
+                <Row>
+                  <Col md="12" sm="12" xl="12"xs="12" py="5" mx="2">
+                  <CardTitle className="titulosAbout">
+                  Attribution            
+                  <hr className="my-2 mb-5" />
+                </CardTitle>    
+                <p className="my-2 mb-2 aboutexto">Icons made
+                 by <a class="LinkTitle" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a className="LinkTitle" href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>.  </p>
+                 <p className="my-2 mb-2 aboutexto">Icons fonts made 
+                 by <a class="LinkTitle" href="https://fontawesome.com/license/free" title="FontAwesome">FontAwesome</a> from <a className="LinkTitle" href="https://fontawesome.com/" title="Flaticon"> www.fontawesome.com/</a>.  </p>
+                 <p className="my-2 mb-2 aboutexto">Graphs  
+                 by <a class="LinkTitle" href="https://github.com/PaulLeCam/react-leaflet/blob/master/LICENSE" title="FontAwesome">React-leaflet</a> from <a className="LinkTitle" href="https://github.com/PaulLeCam/react-leaflet" title="Flaticon"> https://github.com/PaulLeCam/react-leaflet</a>.  </p>
+                 <p className="my-2 mb-2 aboutexto">Maps clusters 
+                 by <a class="LinkTitle" href="https://github.com/yuzhva/react-leaflet-markercluster/blob/master/LICENSE" title="FontAwesome">React-leaflet-markercluster</a> from <a className="LinkTitle" href="https://github.com/yuzhva/react-leaflet-markercluster" title="Flaticon"> https://github.com/yuzhva/react-leaflet-markercluster</a>.  </p>
+                
+               </Col>
+                </Row>
+              </Container>
+              </div> 
 
             </CardBody> 
             </Card>
