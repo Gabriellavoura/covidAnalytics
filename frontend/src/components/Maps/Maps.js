@@ -129,7 +129,7 @@ class Maps extends React.Component{
 
               </CardBody>
 
-             <Map center={center} zoom={7} minZoom={6} maxZoom={9}>
+             <Map center={center} zoom={7} maxZoom={9}>
 
                 <TileLayer
                   attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
