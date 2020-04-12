@@ -2,8 +2,8 @@
 //     client: 'mysql',
 //     connection: {
 //       host : '200.132.77.52',
-//       user : 'covid19',
-//       password : '$C0v!d_19#',
+//       user : '',
+//       password : '',
 //       database : 'covid19'
 //     }
 //   });
