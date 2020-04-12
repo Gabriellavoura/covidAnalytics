@@ -101,7 +101,7 @@ class TableCovid extends React.Component{
         <Card>
           <CardBody>
             <CardTitle  className="TabTitle mb-2 mb-xl-2 font-weight-bold">
-            Campus da FURG e municípios limítrofes
+            Câmpus da FURG e municípios limítrofes
             </CardTitle> 
           </CardBody> 
 
