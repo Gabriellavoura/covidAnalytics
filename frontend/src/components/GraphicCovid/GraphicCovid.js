@@ -51,6 +51,11 @@ class GraphicCovid extends React.Component{
             ]
       },
       options: {
+        elements: {
+          line: {
+            tension: 0.2
+          },
+        },
         legend: {
           onClick: (e) => e.stopPropagation()
         }
