@@ -22,7 +22,7 @@ npm start
 
 Gabriel Lavoura – [@gabriel_lavoura](https://twitter.com/gabriel_lavoura)
 
-Vanessa Telles – [@tellesvanessa07](https://twitter.com/tellesvanessa07)
+Vanessa Telles – [@tellesvanessa07](https://www.linkedin.com/in/vanessa-telles-da-silva-8ab4b614a/)
 
 Willian Lemos –
 
