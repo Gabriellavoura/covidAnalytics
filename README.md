@@ -18,6 +18,9 @@ npm start
 * 0.0.1
     * Work in progress
 
+* 0.1.0
+    * Production version
+
 ## Authors
 
 Gabriel Lavoura – [@gabriel_lavoura](https://twitter.com/gabriel_lavoura)
