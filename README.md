@@ -14,12 +14,13 @@ npm start
 
 
 ## Release History
-
+* 0.1.0
+    * Production version
+    
 * 0.0.1
     * Work in progress
 
-* 0.1.0
-    * Production version
+
 
 ## Authors
 
