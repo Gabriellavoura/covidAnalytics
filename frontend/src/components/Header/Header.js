@@ -55,7 +55,7 @@ const Header = (props)=>{
                 </NavItem>
 
                 <NavItem className="portal">
-                  <NavLink className="LinkTitle"  href="https://github.com/Gabriellavoura/coronaDash">
+                  <NavLink className="LinkTitle"  href="https://github.com/Gabriellavoura/covidAnalytics">
                     Github
                   </NavLink>
                 </NavItem>

@@ -32,7 +32,7 @@ export default class Footer extends React.Component {
                 </a>
                 <Link to="/about"  class="mr-md-5 mr-3 fa-2x footerfonts LinkTitle" >Sobre nós                            
                 </Link>
-                <a href="https://github.com/Gabriellavoura/coronaDash"  class="mr-md-5 mr-3 fa-2x footerfonts LinkTitle" >Github                            
+                <a href="https://github.com/Gabriellavoura/covidAnalytics"  class="mr-md-5 mr-3 fa-2x footerfonts LinkTitle" >Github                            
                 </a>
                 <a href="https://brasil.io/home"  class="mr-md-5 mr-3 fa-2x footerfonts LinkTitle" >Dados                            
                 </a>
