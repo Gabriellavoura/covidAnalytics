@@ -46,25 +46,6 @@ export default function Home() {
           <Row >
             {/* Card Casos Confirmados */}
             <Col xs="12" sm="12" md="4">
-                  <CardConf/>
-            </Col>
-
-            {/* Card Obitos */}
-            <Col xs="12" sm="12" md="4">
-                <CardOb/>
-            </Col>
-
-            {/* Card Letalidade */}
-            <Col xs="12" sm="12" md="4">
-                <CardLet/>
-            </Col>
-          </Row>
-        </Col>
-
-        <Col xs="12" sm="12" md="12" xl="12" >
-          <Row >
-            {/* Card Casos Confirmados */}
-            <Col xs="12" sm="12" md="4">
                   <CardConfRG/>
             </Col>
 
@@ -76,6 +57,25 @@ export default function Home() {
             {/* Card Letalidade */}
             <Col xs="12" sm="12" md="4">
                 <CardLetRG/>
+            </Col>
+          </Row>
+        </Col>
+
+        <Col xs="12" sm="12" md="12" xl="12" >
+          <Row >
+            {/* Card Casos Confirmados */}
+            <Col xs="12" sm="12" md="4">
+                  <CardConf/>
+            </Col>
+
+            {/* Card Obitos */}
+            <Col xs="12" sm="12" md="4">
+                <CardOb/>
+            </Col>
+
+            {/* Card Letalidade */}
+            <Col xs="12" sm="12" md="4">
+                <CardLet/>
             </Col>
           </Row>
         </Col>
