@@ -30,7 +30,7 @@ class CardNote extends React.Component{
               </CardTitle> 
 
             <p className="NoteCardConteudo mb-2 mb-xl-3">
-              Dashboard desenvolvida para visualização dos casos de covid-19 no estado do Rio Grande do Sul
+              Dashboard desenvolvida para visualização dos casos de covid-19 no estado do Rio Grande do Sul e na cidade de Rio Grande
             </p>    
 
             <span id="date" className="NoteCardAtt">
