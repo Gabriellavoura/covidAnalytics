@@ -24,7 +24,7 @@ class GraphicCovidRG extends React.Component{
     axios.get("https://brasil.io/api/dataset/covid19/caso/data/?state=RS&place_type=city&city=Rio%20Grande")
     .then(res => {
       this.setState({results: res.data.results});
-      for(i=0; i<10; i++){
+      for(i=0; i<30; i++){
         numero[i] = this.state.results[i].confirmed;
         data[i] = formatDate(this.state.results[i].date);
       }      
