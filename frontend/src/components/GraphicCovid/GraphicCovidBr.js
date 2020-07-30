@@ -64,7 +64,7 @@ class GraphicCovidBr extends React.Component{
 
       var current_date = toDate(dates.sort().reverse()[0])
       
-      for (k = 0; k < 10; k++) {
+      for (k = 0; k < 30; k++) {
         for (i = 0; i < estados.length; i++) {
           var uf_set = uf_hash[estados[i]];
           var date_aux = new Date (current_date.getTime())
