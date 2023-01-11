@@ -14,7 +14,7 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "chart.js": "^2.9.3",
-    "knex": "^0.20.13",
+    "knex": "^2.4.0",
     "leaflet": "^1.6.0",
     "leaflet.markercluster": "^1.4.1",
     "mssql": "^6.2.0",
