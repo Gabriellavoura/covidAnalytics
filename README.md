@@ -26,9 +26,9 @@ npm start
 
 ## Authors
 
-Gabriel Lavoura – [@gabriel_lavoura](https://twitter.com/gabriel_lavoura)
+[Gabriel Lavoura](https://www.linkedin.com/in/gabriellavoura/)
 
-Vanessa Telles – [@tellesvanessa07](https://www.linkedin.com/in/vanessa-telles-da-silva-8ab4b614a/)
+[Vanessa Telles](https://www.linkedin.com/in/tellesvanessa/)
 
 Willian Lemos –
 
