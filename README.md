@@ -4,6 +4,8 @@
 
 CoronaDash is an open source data visualization platform, to make information about covid-19 easily available in the state of Rio Grande do Sul - Brazil, that's an initiative of IteCorona from Universidade Federal do Rio Grande (FURG) and Centro de Ciências Computacionais (C3).
 
+![0](https://github.com/user-attachments/assets/95614e4e-2e17-4ebf-8855-96749309a820)
+
 ## Installation
 Inside the frontend folder run:
 ```sh
